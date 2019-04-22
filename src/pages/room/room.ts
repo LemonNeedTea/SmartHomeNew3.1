@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
 import { DeviceRequestsProvider } from '../../providers/tools/requests';
 import { Variable } from '../../providers/model/variable';
+import { RoomdevicePage } from '../../pages/roomdevice/roomdevice';
 
 /**
  * Generated class for the RoomPage page.
@@ -84,10 +85,10 @@ export class RoomPage {
     this.roomResultData = roomResult;
   }
   goRoomDevice(id: string, name: string) {
-    this.navCtrl.push('RoomdevicePage', { id: id, name: name });
+    this.navCtrl.push(RoomdevicePage, { id: id, name: name });
   }
   // ionViewDidLeave() {
-  //   this.events.unsubscribe("FnData:51");
+  //   this.events.unsubscribe("FnData:51",()=>{});
   // }
 
 }

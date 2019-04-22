@@ -30,7 +30,7 @@ export class RoomdevicePage {
   deviceDataListShow: any;
   stateData: any;
   auto: boolean;
-  isType:boolean;
+  isType: boolean;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -54,20 +54,20 @@ export class RoomdevicePage {
     this.roomID = this.navParams.get('id');
     this.roomName = this.navParams.get('name');
     this.isType = this.navParams.get('isType');
-    if(this.isType){
+    if (this.isType) {
       this.device.getDeviceDataListByTypeID(this.roomID).then(res => {
         this.deviceDataListShow = res;
       });
-    }else{
+    } else {
       this.device.getDeviceDataListByRoomID(this.roomID).then(res => {
         this.deviceDataListShow = res;
       });
     }
- 
+
   }
   ionViewDidLeave() {
-    this.events.unsubscribe("FnData:51");
-    this.events.unsubscribe("FnData:isAuto");
+    this.events.unsubscribe("FnData:51",()=>{});
+    this.events.unsubscribe("FnData:isAuto",()=>{});
 
   }
   goSetting(data: any) {

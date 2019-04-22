@@ -51,7 +51,7 @@ export class HomePage {
       this.weatherinfo = res;
     });
     this.modeID = Variable.GetFnData('51', '-2');
-    this.events.subscribe("FnData:51", (data) => {
+    this.events.subscribe("FnData:51", (data) => {console.log('home');
       if (data) {
         this.modeID = data['-2'];
       }

@@ -10,6 +10,8 @@ import { PumpEastnorthpoolSettingPage } from '../device-setting/pump-eastnorthpo
 import { PumpNorthcourtSettingPage } from '../device-setting/pump-northcourt-setting/pump-northcourt-setting';
 import { ValveEastcourtSettingPage } from '../device-setting/valve-eastcourt-setting/valve-eastcourt-setting';
 import { ValveEastnorthpoolSettingPage } from '../device-setting/valve-eastnorthpool-setting/valve-eastnorthpool-setting';
+import { RoomdevicePage } from '../../pages/roomdevice/roomdevice';
+
 /**
  * Generated class for the DevicePage page.
  *
@@ -65,12 +67,12 @@ export class DevicePage {
     let data = Variable.GetFnData('51');
     this.getTypeDeviceNum(data);
     this.events.subscribe("FnData:51", (res) => {
-      this.getTypeDeviceNum(res);
+      this.getTypeDeviceNum(res); console.log(res);
     });
   }
   // ionViewDidLeave() {
-  //   this.events.unsubscribe("FnData:51");
-  //   this.events.unsubscribe("FnData:isAuto");
+  //   this.events.unsubscribe("FnData:51",()=>{});
+  //   this.events.unsubscribe("FnData:isAuto",()=>{});
   //   console.log('ionViewDidLeave')
   // }
   getTypeDeviceNum(data: any) {
@@ -136,6 +138,6 @@ export class DevicePage {
     }
   }
   goRoomDevice(id: string, name: string) {
-    this.navCtrl.push('RoomdevicePage', { id: id, name: name ,isType:true});
+    this.navCtrl.push(RoomdevicePage, { id: id, name: name, isType: true });
   }
 }

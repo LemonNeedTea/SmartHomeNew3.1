@@ -49,8 +49,8 @@ export class DoorSettingPage {
     Variable.socketObject.setDeviceState(this.id, this.name, state);
   }
   ionViewDidLeave() {
-    this.events.unsubscribe("FnData:51");
-    this.events.unsubscribe("FnData:isAuto");
+    this.events.unsubscribe("FnData:51",()=>{});
+    this.events.unsubscribe("FnData:isAuto",()=>{});
   }
 
 }

@@ -72,10 +72,10 @@ export class WellpumpPage {
 
   }
   ionViewDidLeave() {
-    this.events.unsubscribe("FnData:50");
-    this.events.unsubscribe("FnData:51");
-    this.events.unsubscribe("FnData:52");
-    this.events.unsubscribe("FnData:isAuto");
+    this.events.unsubscribe("FnData:50",()=>{});
+    this.events.unsubscribe("FnData:51",()=>{});
+    this.events.unsubscribe("FnData:50",()=>{});
+    this.events.unsubscribe("FnData:isAuto",()=>{});
   }
   changeData(chart, guide: any, data: any) {
     guide.position = [data[0].key, data[0].value];

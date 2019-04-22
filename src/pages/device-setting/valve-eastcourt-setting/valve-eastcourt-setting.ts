@@ -19,7 +19,7 @@ export class ValveEastcourtSettingPage {
   id: string;
   state: boolean;
   auto: boolean;
-  timerState:boolean;
+  timerState: boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public modalCtrl: ModalController,
@@ -46,7 +46,7 @@ export class ValveEastcourtSettingPage {
   }
   private getTimerState(data: any) {
     if (data) {
-      this.timerState =!Boolean(Number(data["F5547"])) ; 
+      this.timerState = !Boolean(Number(data["F5547"]));
     }
   }
 
@@ -67,9 +67,9 @@ export class ValveEastcourtSettingPage {
     Variable.socketObject.setDeviceState(this.id, this.name, state);
   }
   ionViewDidLeave() {
-    this.events.unsubscribe("FnData:51");
-    this.events.unsubscribe("FnData:55");
-    this.events.unsubscribe("FnData:isAuto");
+    this.events.unsubscribe("FnData:51", () => { });
+    this.events.unsubscribe("FnData:55", () => { });
+    this.events.unsubscribe("FnData:isAuto", () => { });
 
   }
 }

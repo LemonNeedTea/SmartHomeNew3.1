@@ -251,7 +251,7 @@ export class ToolsProvider {
     if (data) {
       return data;
     } else {
-      return false;
+      return true;
     }
   }
 

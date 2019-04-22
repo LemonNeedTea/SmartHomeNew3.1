@@ -40,10 +40,10 @@
 
     <ion-list class="user-list">
       <ion-item (click)="pushPassword()">
-        <ion-icon name="lock" item-start color="primary"></ion-icon>
-        <ion-label color='primary' >震动反馈</ion-label>
+        <ion-icon name="cog" item-start color="primary"></ion-icon>
+        <ion-label color='primary'>震动反馈</ion-label>
         <ion-toggle [(ngModel)]="vibrate" (ngModelChange)='setVibrate()'></ion-toggle>
-      </ion-item >
+      </ion-item>
       <button ion-item class="text-1x" (click)="pushPassword()">
         <ion-icon name="lock" item-start color="primary"></ion-icon>
         <span ion-text color="primary">修改密码</span>

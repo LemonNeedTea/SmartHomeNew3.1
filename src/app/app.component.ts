@@ -74,21 +74,21 @@ export class MyApp {
     });
     //网络状态改变提示
     if (this.network.onchange) {
-      // this.network.onchange().subscribe((data) => {
-      //   let name: string = null;
-      //   switch (this.network.type) {
-      //     case 'wifi': { name = 'wifi'; break; }
-      //     case '4g': { name = '4g'; break; }
-      //     case 'cellular': { name = 'cellular'; break; }
-      //   }
-      //   if (name) {
-      //     this.toastCtrl.create({
-      //       message: '切换到' + this.network.type + '网络',
-      //       duration: 3000,
-      //       position: 'top'
-      //     }).present();
-      //   }
-      // });
+      this.network.onchange().subscribe((data) => {
+        let name: string = null;
+        switch (this.network.type) {
+          case 'wifi': { name = 'wifi'; break; }
+          case '4g': { name = '4g'; break; }
+          case 'cellular': { name = 'cellular'; break; }
+        }
+        if (name) {
+          this.toastCtrl.create({
+            message: '切换到' + this.network.type + '网络',
+            duration: 3000,
+            position: 'top'
+          }).present();
+        }
+      });
     }
 
 
@@ -108,7 +108,7 @@ export class MyApp {
     this.loginRequest.removeUserInfo();
     this.nav.setRoot(LoginPage);
   }
-  setVibrate(){
+  setVibrate() {
     this.tools.setVibrate(this.vibrate);
   }
 }

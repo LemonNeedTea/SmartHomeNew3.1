@@ -67,6 +67,8 @@ import { ModeLightJwTimerPage } from '../pages/timer/mode-light-jw-timer/mode-li
 import { ModeLightTimerPage } from '../pages/timer/mode-light-timer/mode-light-timer';
 import { ModeDeviceSelectedSettingPage } from '../pages/mode-device-selected-setting/mode-device-selected-setting';
 import { PasswordPage } from '../pages/password/password';
+import { RoomdevicePage } from '../pages/roomdevice/roomdevice';
+
 
 
 //组件
@@ -111,7 +113,8 @@ import { ComponentsModule } from '../components/components.module'
     ModeCurtainTimerPage,
     ModeAirseasonsonTimerPage,
     ModeDeviceSelectedSettingPage,
-    PasswordPage
+    PasswordPage,
+    RoomdevicePage
   ],
   imports: [
     BrowserModule,
@@ -160,7 +163,8 @@ import { ComponentsModule } from '../components/components.module'
     ModeCurtainTimerPage,
     ModeAirseasonsonTimerPage,
     ModeDeviceSelectedSettingPage,
-    PasswordPage
+    PasswordPage,
+    RoomdevicePage
   ],
   providers: [
     StatusBar,
