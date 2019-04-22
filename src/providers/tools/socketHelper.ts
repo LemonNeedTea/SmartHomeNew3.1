@@ -54,6 +54,7 @@ export class SocketHelpProvider {
             SetState: state
         };
         this.socket.sendMessage(param);
+        this.tools.vibrate();
         this.presentLoading(name, "51");
         Variable.controlDevice = {
             id: id,
@@ -98,6 +99,7 @@ export class SocketHelpProvider {
     }
     setMode(id: string, name: string, speech: boolean = false) {
         this.presentLoading(name);
+        this.tools.vibrate();
         var param = {
             Type: 'set',
             UserName: this.tools.getUserName(), //用户名

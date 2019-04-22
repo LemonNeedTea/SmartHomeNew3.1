@@ -19,7 +19,7 @@
 
         <ion-row no-padding class="other-data">
           <ion-col no-padding class="column">
-            <button ion-button icon-left small full color="light"  menuClose>
+            <button ion-button icon-left small full color="light" menuClose>
               <ion-icon name="contact"></ion-icon>
               个人资料
             </button>
@@ -39,10 +39,16 @@
   <ion-content>
 
     <ion-list class="user-list">
+      <ion-item (click)="pushPassword()">
+        <ion-icon name="lock" item-start color="primary"></ion-icon>
+        <ion-label color='primary' >震动反馈</ion-label>
+        <ion-toggle [(ngModel)]="vibrate" (ngModelChange)='setVibrate()'></ion-toggle>
+      </ion-item >
       <button ion-item class="text-1x" (click)="pushPassword()">
         <ion-icon name="lock" item-start color="primary"></ion-icon>
         <span ion-text color="primary">修改密码</span>
       </button>
+
       <button ion-item menuClose class="text-1x">
         <ion-icon name="alert" item-start color="primary"></ion-icon>
         <span ion-text color="primary">关于</span>

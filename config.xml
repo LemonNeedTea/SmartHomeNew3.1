@@ -91,5 +91,5 @@
         <variable name="APPID" value="15934786" />
     </plugin>
     <engine name="android" spec="7.1.4" />
-    <engine name="ios" spec="~4.5.5" />
+    <engine name="ios" spec="4.5.5" />
 </widget>

@@ -52,7 +52,9 @@ export class HomePage {
     });
     this.modeID = Variable.GetFnData('51', '-2');
     this.events.subscribe("FnData:51", (data) => {
-      this.modeID = data['-2'];
+      if (data) {
+        this.modeID = data['-2'];
+      }
     });
 
     this.deviceRequest.getDeviceMode().then(res => {

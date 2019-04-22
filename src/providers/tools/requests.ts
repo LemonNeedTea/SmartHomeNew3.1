@@ -52,6 +52,10 @@ export class LoginRequestsProvider {
           this.socket.startSocket();//启动websocket
           Variable.socketObject = this.socket;
           this.getTipAlarmList();
+          //获取震动状态
+
+          let vibrateState = this.tools.getVibrate();
+          this.events.publish("vibrate", vibrateState);
           resolve(true);
 
         } else {
@@ -118,7 +122,7 @@ export class DeviceRequestsProvider {
 * 获取设备模式列表
 */
   getDeviceMode() {
-    return this.http.postMain('/EnergyAppData/GetDeviceModeDataList',{},false);
+    return this.http.postMain('/EnergyAppData/GetDeviceModeDataList', {}, false);
   }
   /** 
 * 获取设备列表
@@ -127,14 +131,14 @@ export class DeviceRequestsProvider {
     return this.http.postMain('/EnergyAppData/GetDevicesDataList');
   }
   getDeviceTypeDataList() {
-    return this.http.postMain("/EnergyAppData/GetDeviceTypeDataList",{},false);
+    return this.http.postMain("/EnergyAppData/GetDeviceTypeDataList", {}, false);
   }
 
   getFloorDataList() {
-    return this.http.postMain("/EnergyAppData/GetFloorDataList",{},false);
+    return this.http.postMain("/EnergyAppData/GetFloorDataList", {}, false);
   }
   getRoomDataList() {
-    return this.http.postMain("/EnergyAppData/GetRoomDataList",{},false);
+    return this.http.postMain("/EnergyAppData/GetRoomDataList", {}, false);
   }
   getDeviceDataListByRoomID(roomID: string) {
     return this.http.postMain('/EnergyAppData/GetDevicesDataListByRoomID', { "RoomID": roomID });

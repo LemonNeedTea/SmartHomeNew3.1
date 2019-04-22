@@ -19,6 +19,7 @@ export class MyApp {
   rootPage: any = LoginPage;
   //  rootPage: any ;
   username: string = '';
+  vibrate: boolean;
   constructor(
     platform: Platform,
     statusBar: StatusBar,
@@ -37,6 +38,9 @@ export class MyApp {
       //接受订阅用户名称
       events.subscribe('user:created', (user, time) => {
         this.username = user;
+      });
+      events.subscribe("vibrate", res => {
+        this.vibrate = res;
       });
       //自动登录
       this.autoLogin();
@@ -103,5 +107,8 @@ export class MyApp {
   logout() {
     this.loginRequest.removeUserInfo();
     this.nav.setRoot(LoginPage);
+  }
+  setVibrate(){
+    this.tools.setVibrate(this.vibrate);
   }
 }

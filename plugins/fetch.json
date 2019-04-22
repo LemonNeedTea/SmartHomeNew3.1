@@ -100,5 +100,13 @@
       "SECRETKEY": "Qn3w4MKwcDGcdNUOTrjQ2s8axGDKDqER",
       "APPID": "15934786"
     }
+  },
+  "cordova-plugin-vibration": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-vibration"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

@@ -16,6 +16,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { QRScanner } from '@ionic-native/qr-scanner';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
 import { Network } from '@ionic-native/network';
+import { Vibration } from '@ionic-native/vibration';
 
 //自定义工厂
 import { WebSocketProvider } from "../providers/ws";
@@ -180,7 +181,8 @@ import { ComponentsModule } from '../components/components.module'
     SocketHelpProvider,
     WebSocketService,
     ServerSocket,
-    SpeechHelperProvider
+    SpeechHelperProvider,
+    Vibration
   ]
 })
 export class AppModule { }

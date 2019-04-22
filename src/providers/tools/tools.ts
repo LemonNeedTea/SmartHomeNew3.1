@@ -6,6 +6,7 @@ import { ConfigProvider } from '../config/config';
 
 import Moment, { now } from 'moment';
 import { EnumEnergyType, EnumDateType, EnumChartType } from '../../providers/model/enumdata';
+import { Vibration } from '@ionic-native/vibration';
 
 
 @Injectable()
@@ -16,7 +17,8 @@ export class ToolsProvider {
     private events: Events,
     private config: ConfigProvider,
     private toastCtrl: ToastController,
-    private alertCtrl: AlertController
+    private alertCtrl: AlertController,
+    private vibration: Vibration
   ) {
   }
   //获取用户信息
@@ -234,6 +236,25 @@ export class ToolsProvider {
     });
     alert.present();
   }
+  vibrate() {
+    let state = this.getVibrate();
+    if (state == true) {
+      this.vibration.vibrate(1000);
+    }
+  }
+  setVibrate(state: boolean) {
+    this.storage.set("vibrate", state);
+    this.vibrate();
+  }
+  getVibrate() {
+    let data = this.storage.get("vibrate");
+    if (data) {
+      return data;
+    } else {
+      return false;
+    }
+  }
+
 
 
 
