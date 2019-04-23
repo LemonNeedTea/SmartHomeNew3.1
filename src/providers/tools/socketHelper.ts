@@ -60,7 +60,8 @@ export class SocketHelpProvider {
             id: id,
             state: state,
             name: name,
-            speech: speech
+            speech: speech,
+            type: 'device'
         };
     }
     private initTTSconfig(data: string) {
@@ -110,10 +111,11 @@ export class SocketHelpProvider {
         // console.log(param);
         this.socket.sendMessage(param);
         Variable.controlDevice = {
-            id: id,
-            state: 1,
+            id: '-2',
+            state: id,
             name: name,
-            speech: speech
+            speech: speech,
+            type: 'model'
         };
     }
     setModeDetail(agreementID: string) {
@@ -170,7 +172,7 @@ export class SocketHelpProvider {
         }
     }
     socketMessageHandle(data: any) {
-        // console.log(data);
+        console.log(data);
         switch (data.Type) {
             case 'get':
                 {
@@ -194,14 +196,22 @@ export class SocketHelpProvider {
                             }
                         case 41://模式和定时设置
                             {
+                                let controlData = Variable.controlDevice;
                                 if (!data.Result) {
                                     this.tools.presentToast(data.Msg);
+                                    this.speechDevice(controlData, false);
+                                    this.dismissLoading();
+                                } else {
+                                    if (controlData) {
+                                        if (controlData.type === 'model') {
+
+                                        } else {
+                                            this.speechDevice(controlData);
+                                            this.dismissLoading();
+                                        }
+                                    }
                                 }
-                                let controlData = Variable.controlDevice;
-                                if (controlData) {
-                                    this.speechDevice(controlData);
-                                }
-                                this.dismissLoading();
+
                                 break;
                             }
                     }

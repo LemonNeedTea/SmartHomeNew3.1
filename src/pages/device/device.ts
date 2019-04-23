@@ -32,7 +32,6 @@ export class DevicePage {
   stateData: any = {};
   auto: boolean;
   private openStateNumArr: any = {};
-  private isFirst = true;
   constructor(public navCtrl: NavController, public navParams: NavParams, private device: DeviceRequestsProvider,
     private events: Events) {
     this.getIsAuto();
@@ -44,7 +43,6 @@ export class DevicePage {
       this.device.getDeviceIDtoTypeID().then((ress: any) => {
         this.deviceDataList = ress;
         this.getFn51Data();
-        this.isFirst = false;
 
       });
     });
@@ -67,7 +65,7 @@ export class DevicePage {
     let data = Variable.GetFnData('51');
     this.getTypeDeviceNum(data);
     this.events.subscribe("FnData:51", (res) => {
-      this.getTypeDeviceNum(res); console.log(res);
+      this.getTypeDeviceNum(res);
     });
   }
   // ionViewDidLeave() {
