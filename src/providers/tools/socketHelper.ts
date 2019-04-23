@@ -71,15 +71,21 @@ export class SocketHelpProvider {
     private speechDevice(controlData: any, success: boolean = true) {
         let statestr = "";
         if (controlData.speech) {
-            switch (Number(controlData.state)) {
-                case 0: {
-                    statestr = "关闭"; break;
-                } case 1: {
-                    statestr = "打开"; break;
-                } case 2: {
-                    statestr = "停止"; break;
+            if (controlData.type === 'model') {
+                statestr = "打开";
+            } else {
+
+                switch (Number(controlData.state)) {
+                    case 0: {
+                        statestr = "关闭"; break;
+                    } case 1: {
+                        statestr = "打开"; break;
+                    } case 2: {
+                        statestr = "停止"; break;
+                    }
                 }
             }
+
             let message = `${controlData.name}${statestr}${success == true ? "成功" : "失败"}`;
             this.initTTSconfig(message);
         }
@@ -106,7 +112,8 @@ export class SocketHelpProvider {
             UserName: this.tools.getUserName(), //用户名
             MonitorID: 1,
             FnID: 41,
-            controlData: `3,${id}`
+            controlData: `3,${id}`,
+            speech: speech
         }
         // console.log(param);
         this.socket.sendMessage(param);
@@ -206,7 +213,6 @@ export class SocketHelpProvider {
                                         if (controlData.type === 'model') {
 
                                         } else {
-                                            this.speechDevice(controlData);
                                             this.dismissLoading();
                                         }
                                     }

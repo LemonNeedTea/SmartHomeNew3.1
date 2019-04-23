@@ -248,10 +248,10 @@ export class ToolsProvider {
   }
   getVibrate() {
     let data = this.storage.get("vibrate");
-    if (data) {
-      return data;
-    } else {
+    if (data==true) {
       return true;
+    } else {
+      return false;
     }
   }
 
