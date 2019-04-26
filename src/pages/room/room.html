@@ -33,7 +33,7 @@
       <ion-item-group *ngFor="let floor of floors"> 
         <ion-item-divider sticky >
          {{floor.F_Name}}
-    <p float-right>{{roomResultData[floor.F_ID]}}/{{floor.F_DeviceNum}}</p>
+    <p float-right class="state">{{roomResultData[floor.F_ID]}}/{{floor.F_DeviceNum}}</p>
 
         </ion-item-divider>
   
@@ -44,7 +44,7 @@
             </div>
             
            {{room.F_Name}}
-           <p item-end>{{roomResultData[room.F_ID]}}/{{room.F_DeviceNum}}</p>
+           <p item-end  class="state"><span>{{roomResultData[room.F_ID]}}</span>/{{room.F_DeviceNum}}</p>
           </ion-item>
         </ion-item-sliding>
   

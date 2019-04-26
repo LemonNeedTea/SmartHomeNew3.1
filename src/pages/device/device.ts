@@ -58,7 +58,7 @@ export class DevicePage {
   getIsAuto() {
     this.auto = Variable.isAuto;
     this.events.subscribe("FnData:isAuto", (data) => {
-      this.auto = data;
+      this.auto = data;console.log(data);
     });
   }
   getFn51Data() {

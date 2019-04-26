@@ -1,6 +1,6 @@
 page-home {
     .bar-button {
-      color: #fff;
+      // color: #fff;
     }
     .toolbar-title {
       color: #fff;
@@ -63,7 +63,7 @@ page-home {
     ion-card {
       text-align: center;
       img {
-        width: 40px;
+        width: 45px;
         text-align: center;
         display: inline-block;
         border-radius: 50% !important;
@@ -93,8 +93,10 @@ page-home {
       margin-bottom: 0;
     }
     .mode-card-selected {
-      background-image: linear-gradient(0deg, #97d3f8 0%, #499ffd 100%);
+      background-image: linear-gradient(-139deg, #5AB5F7 3%, #51AFF4 91%);
       box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+      color: white;
+
       p {
         color: white;
       }
@@ -166,6 +168,10 @@ page-home {
           height: 45px;
           padding: 8px;
       }
+   
+  }
+  .item-inner{
+    padding: 0 !important;
   }
   }
   

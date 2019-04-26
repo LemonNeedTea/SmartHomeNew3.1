@@ -6,7 +6,7 @@
     </button>
     <ion-title>家居智慧能源管理</ion-title>
     <ion-buttons end>
-      <button ion-button icon-only (click)="scan()" tappable end>
+      <button ion-button icon-only (click)="scan()" tappable end style="color:white">
         <ion-icon name="barcode-outline"></ion-icon>
       </button>
     </ion-buttons>
@@ -29,9 +29,9 @@
       </ion-row>
     </div> -->
   </div>
-  <ion-list>
-    <ion-item-group>
-      <ion-item-divider sticky no-padding>
+  <ion-list no-padding no-margin>
+    <!-- <ion-item-group> -->
+      <ion-item-divider sticky no-padding style="background:white">
         <ion-segment [(ngModel)]="homeType">
           <ion-segment-button value="mode">
             模式
@@ -43,7 +43,7 @@
       </ion-item-divider>
 
       <ion-item-sliding no-padding no-margin>
-        <ion-item no-padding no-margin>
+        <ion-item no-padding no-margin  style="background-color:#f7f7f7">
           <!-- {{homeType}} -->
 
           <div [ngSwitch]="homeType">
@@ -67,7 +67,7 @@
                         </ion-card-header>
                         <ion-card-content (click)="setMode(mode.F_AgreementID,mode.F_Name)">
                           <img src="../assets/img/home/icon-mode/{{mode.F_Img}}">
-                          <h4 ion-text>{{mode.F_Name}} </h4>
+                          <h3 ion-text style="font-size: 1.6rem;">{{mode.F_Name}} </h3>
                         </ion-card-content>
                       </ion-card>
                     </ion-col>
@@ -79,9 +79,9 @@
               </div>
             </div>
 
-            <div *ngSwitchCase="'setting'">
-              <ion-list class="my-list">
-                <ion-item (click)="goModePublicSetting()">
+            <div *ngSwitchCase="'setting'"class="my-list">
+              <!-- <ion-list class="my-list"> -->
+                <ion-item (click)="goModePublicSetting()" no-padding>
                   <div item-start class="start c5">
                     <img src='../../assets/home/publicsetting.png'>
                   </div>
@@ -89,7 +89,7 @@
                   <ion-icon name="arrow-forward" item-end></ion-icon>
                 </ion-item>
                 
-              </ion-list>
+              <!-- </ion-list> -->
             </div>
 
 
@@ -99,7 +99,7 @@
         </ion-item>
       </ion-item-sliding>
 
-    </ion-item-group>
+    <!-- </ion-item-group> -->
   </ion-list>
 
   <!-- <ion-item>

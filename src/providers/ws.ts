@@ -16,6 +16,10 @@ export class WebSocketProvider {
 
   }
   createObservableSocket(username: string): Observable<any> {
+    if (this.ws) {
+      this.ws.close();
+      this.ws = null;
+    }
     this.ws = new WebSocket(this.config.websocketUrl);
     this.ws.onopen = d => {
       let data = {

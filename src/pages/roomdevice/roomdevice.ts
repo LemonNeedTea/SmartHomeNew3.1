@@ -36,21 +36,6 @@ export class RoomdevicePage {
     public navParams: NavParams,
     private device: DeviceRequestsProvider,
     private events: Events) {
-
-  }
-
-  ionViewDidLoad() {
-    this.stateData = Variable.GetFnData('51');
-    this.events.subscribe("FnData:51", (data) => {
-      this.stateData = data;
-
-    });
-    this.auto = Variable.isAuto;
-    this.events.subscribe("FnData:isAuto", (data) => {
-      this.auto = data;
-    });
-  }
-  ionViewWillEnter() {
     this.roomID = this.navParams.get('id');
     this.roomName = this.navParams.get('name');
     this.isType = this.navParams.get('isType');
@@ -63,11 +48,27 @@ export class RoomdevicePage {
         this.deviceDataListShow = res;
       });
     }
+    this.stateData = Variable.GetFnData('51');
+    this.events.subscribe("FnData:51", (data) => {
+      this.stateData = data;
+
+    });
+    this.auto = Variable.isAuto;
+    this.events.subscribe("FnData:isAuto", (data) => {
+      this.auto = data;
+    });
+  }
+
+  ionViewDidLoad() {
 
   }
-  ionViewDidLeave() {
-    this.events.unsubscribe("FnData:51",()=>{});
-    this.events.unsubscribe("FnData:isAuto",()=>{});
+  ionViewWillEnter() {
+
+
+  }
+  ionViewWillUnload() {
+    this.events.unsubscribe("FnData:51", () => { });
+    this.events.unsubscribe("FnData:isAuto", () => { });
 
   }
   goSetting(data: any) {
