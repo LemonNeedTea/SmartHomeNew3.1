@@ -8,18 +8,18 @@
 
 <ion-content>
   <ion-list class="my-list">
-    <ion-item *ngFor="let item of typeDataList" (tap)="goRoomDevice(item['F_ID'],item.F_Name)">
+    <button ion-item *ngFor="let item of typeDataList" (tap)="goRoomDevice(item['F_ID'],item.F_Name)">
       <div item-start class="start"  [ngClass]="item['F_Color']"><img src='../assets/img/home/icon-devicesetting/{{item.F_Img}}'></div>
 
       <h2>{{item.F_Name}}
-        <p float-right margin-right class="state">{{stateData[item['F_ID']]}}/{{item.F_DeviceNum}}</p>
+        <p float-right  class="state">{{stateData[item['F_ID']]}}/{{item.F_DeviceNum}}</p>
 
       </h2>
 
 
-      <ion-icon name="arrow-forward" item-end></ion-icon>
+      <!-- <ion-icon name="arrow-forward" item-end></ion-icon> -->
 
-    </ion-item>
+    </button>
   </ion-list>
   <!-- 
   <div class="cate_content">

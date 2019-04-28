@@ -257,6 +257,7 @@ export class SocketHelpProvider {
         let auto = data['0'] == '0' ? true : false;
         Variable.isAuto = auto;
         this.events.publish("FnData:isAuto", auto);
+        console.log("auto",auto);
         // if(auto){
         //     this.tools.presentToast("当前位手动模式，设备不可控");
         // }

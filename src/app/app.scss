@@ -67,16 +67,16 @@
   background-color: #88b7c9;
 }
 .c5{
-  background-color: #c9deef;
+  background-color: #888;
 }
 .c6{
-  background-color: #c9deef;
+  background-color: #6699cc;
 }
 .c7{
-  background-color: #d9e0bf
+  background-color: #66ACFD
 }
 .c8{
-  background-color: #e75a48
+  background: linear-gradient(45deg, #E44248 0%, #EB777B 100%) !important
 }
 .c9{
   background-color: #3f3e3c
@@ -218,6 +218,7 @@ ion-list-header{
   margin:8px !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+
   // span{
   //   color: color($colors,primary);
   // }

@@ -38,14 +38,14 @@
         </ion-item-divider>
   
         <ion-item-sliding *ngFor="let room of rooms" (click)="goRoomDevice(room.F_ID,floor.F_Name+room.F_Name)">
-          <ion-item *ngIf="room.F_FloorID==floor.F_ID"> 
+          <button ion-item *ngIf="room.F_FloorID==floor.F_ID"> 
             <div item-start class="start" [ngClass]="room.F_Color">
               <img src="../../assets/room/{{room.F_Img}}">
             </div>
             
            {{room.F_Name}}
            <p item-end  class="state"><span>{{roomResultData[room.F_ID]}}</span>/{{room.F_DeviceNum}}</p>
-          </ion-item>
+          </button>
         </ion-item-sliding>
   
       </ion-item-group>
