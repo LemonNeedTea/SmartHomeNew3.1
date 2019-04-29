@@ -25,6 +25,8 @@ export class SocketHelpProvider {
        */
     startSocket() {
         this.events.publish("FnData:51");
+        // this.events.publish("FnData:50");
+        // this.events.publish("FnData:54");
         this.socket.createObservableSocket(this.tools.getUserName()).subscribe(res => {
             this.socketMessageHandle(res);
         }, err => {
@@ -179,7 +181,7 @@ export class SocketHelpProvider {
         }
     }
     socketMessageHandle(data: any) {
-        console.log(data);
+        // console.log(data);
         switch (data.Type) {
             case 'get':
                 {
@@ -257,7 +259,7 @@ export class SocketHelpProvider {
         let auto = data['0'] == '0' ? true : false;
         Variable.isAuto = auto;
         this.events.publish("FnData:isAuto", auto);
-        console.log("auto",auto);
+        // console.log("auto",auto);
         // if(auto){
         //     this.tools.presentToast("当前位手动模式，设备不可控");
         // }

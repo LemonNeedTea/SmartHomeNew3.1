@@ -25,6 +25,8 @@ export class HomePage {
   modeDataList: any = [];
   weatherinfo: any = {};
   homeType: string = 'mode';
+  power: string;
+  oneData: any = { ud: 0, um: 0, uy: 0 };
   constructor(
     public navCtrl: NavController,
     public loadingCtrl: LoadingController, private modalCtrl: ModalController, private events: Events,
@@ -34,12 +36,56 @@ export class HomePage {
     private speech: SpeechHelperProvider,
     public el: ElementRef
   ) {
+
+    this.deviceRequest.getWeatherInfo().then(res => {
+      // console.log(res);
+      this.weatherinfo = res;
+    });
   }
   scan() {
     this.speech.startSpeech();
   }
+  getEnergyDataFn50(data: any) {
+    if (data && data.F504) {
+      this.power = data.F504;
+    }
+  }
+  getEnergyDataFn54(data: any) {
+    if (data && data.F541) {
+      let f541Arr = data.F541.split(',');
+      this.oneData = {
+        ud: f541Arr[0],
+        um: f541Arr[1],
+        uy: f541Arr[2]
+      };
+    }
 
+  }
+  fnDataSubscribe() {
+    console.log("fnDataSubscribe");
+    this.modeID = Variable.GetFnData('51', '-2');
+    this.events.subscribe("FnData:51", (data) => {console.log("home-fn51");
+      if (data) {
+        this.modeID = data['-2'];
+      }
+    });
+    this.events.subscribe("FnData:50", (res) => {
+      this.getEnergyDataFn50(res); console.log("home-fn50");
+    });
+    this.events.subscribe("FnData:54", (res) => {
+      this.getEnergyDataFn54(res);
+    });
+  }
+  ionViewDidLeave() {
+    console.log("ionViewWillLeave");
+    this.events.unsubscribe("FnData:51", () => { });
+    this.events.unsubscribe("FnData:50", () => { });
+    this.events.unsubscribe("FnData:54", () => { });
 
+  }
+  ionViewDidEnter() {
+    this.fnDataSubscribe();
+  }
 
   ionViewDidLoad() {
     let headerHeight = this.header._elementRef.nativeElement.clientHeight;
@@ -50,13 +96,6 @@ export class HomePage {
     this.deviceRequest.getWeatherInfo().then(res => {
       this.weatherinfo = res;
     });
-    this.modeID = Variable.GetFnData('51', '-2');
-    this.events.subscribe("FnData:51", (data) => {
-      if (data) {
-        this.modeID = data['-2'];
-      }
-    });
-
     this.deviceRequest.getDeviceMode().then(res => {
       this.modeDataList = res;
     }, err => { });

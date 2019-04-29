@@ -58,7 +58,7 @@ export class RoomPage {
   getFn51Data() {
     let data = Variable.GetFnData('51');
     this.getTypeDeviceNum(data);
-    this.events.subscribe("FnData:51", (res) => {
+    this.events.subscribe("FnData:51", (res) => {console.log("room-fn51");
       this.getTypeDeviceNum(res);
     });
   }
