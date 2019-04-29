@@ -31,6 +31,8 @@ export class DevicePage {
   typeID: string;
   stateData: any = {};
   auto: boolean;
+  sumNumOPen: number = 0;
+  sumNum: number = 0;
   private openStateNumArr: any = {};
   constructor(public navCtrl: NavController, public navParams: NavParams, private device: DeviceRequestsProvider,
     private events: Events) {
@@ -39,6 +41,7 @@ export class DevicePage {
       this.typeDataList = res;
       res.forEach(element => {
         this.openStateNumArr[element.F_ID] = 0;
+        this.sumNum += element.F_DeviceNum;
       });
       this.device.getDeviceIDtoTypeID().then((ress: any) => {
         this.deviceDataList = ress;
@@ -58,7 +61,7 @@ export class DevicePage {
   getIsAuto() {
     this.auto = Variable.isAuto;
     this.events.subscribe("FnData:isAuto", (data) => {
-      this.auto = data;console.log(data);
+      this.auto = data; console.log(data);
     });
   }
   getFn51Data() {
@@ -74,6 +77,7 @@ export class DevicePage {
   //   console.log('ionViewDidLeave')
   // }
   getTypeDeviceNum(data: any) {
+    this.sumNumOPen = 0;
     let result = JSON.parse(JSON.stringify(this.openStateNumArr));
     for (const key in data) {
       if (data.hasOwnProperty(key) && Number(key) > 0) {
@@ -81,6 +85,7 @@ export class DevicePage {
         let typeID = this.deviceDataList[key];
         let element = data[key];
         if (Boolean(element)) {
+          this.sumNumOPen++;
           result[typeID]++;
         }
       }

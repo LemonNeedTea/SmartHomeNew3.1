@@ -5,15 +5,12 @@
 // roboto, and noto sans fonts
 $font-path: "../assets/fonts";
 
-
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
 // http://ionicframework.com/docs/theming/rtl-support/
 $app-direction: ltr;
 
-
 @import "ionic.globals";
-
 
 // Shared Variables
 // --------------------------------------------------
@@ -21,9 +18,6 @@ $app-direction: ltr;
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
-
-
 
 // Named Color Variables
 // --------------------------------------------------
@@ -34,39 +28,29 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary: #52A1F3,
+  primary: #52a1f3,
   secondary: #5b5ef4,
   danger: #f53d3d,
-  light: #75C4FD,
+  light: #75c4fd,
   dark: #0039a2,
-  dark1:#222,
-  white:(
+  dark1: #222,
+  white: (
     base: #ffffff,
-    contrast:#14ADC4
+    contrast: #14adc4
   )
 );
-
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
-
-
-
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
-
-
-
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
-
-
-
 
 // App Theme
 // --------------------------------------------------
@@ -77,14 +61,12 @@ $colors: (
 
 @import "ionic.theme.default";
 
-
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/ionicons/
 
 @import "ionic.ionicons";
-
 
 // Fonts
 // --------------------------------------------------
@@ -94,18 +76,14 @@ $colors: (
 
 @import "./icons.scss";
 
-
-
-input{
+input {
   caret-color: color($colors, primary);
 }
 
-$list-border-color:#eee;
-$toggle-ios-border-color-off:#eee;
-$toggle-ios-height:28px;
-$toggle-ios-width:50px;
+$list-border-color: #eee;
+$toggle-ios-border-color-off: #eee;
+$toggle-ios-height: 28px;
+$toggle-ios-width: 50px;
 
-$segment-button-ios-height:28px;
-$segment-button-ios-line-height:28px;
-
-
+$segment-button-ios-height: 28px;
+$segment-button-ios-line-height: 28px;

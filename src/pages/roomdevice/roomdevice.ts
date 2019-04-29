@@ -27,10 +27,11 @@ import { ValveEastnorthpoolSettingPage } from '../device-setting/valve-eastnorth
 export class RoomdevicePage {
   roomID: any;
   roomName: any;
-  deviceDataListShow: any;
+  deviceDataListShow: any = [];
   stateData: any;
   auto: boolean;
   isType: boolean;
+  sumNumOpen: number = 0;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -42,23 +43,39 @@ export class RoomdevicePage {
     if (this.isType) {
       this.device.getDeviceDataListByTypeID(this.roomID).then(res => {
         this.deviceDataListShow = res;
+        this.initFn51();
       });
     } else {
       this.device.getDeviceDataListByRoomID(this.roomID).then(res => {
         this.deviceDataListShow = res;
+        this.initFn51();
+
       });
     }
-    this.stateData = Variable.GetFnData('51');
-    this.events.subscribe("FnData:51", (data) => {
-      this.stateData = data;
 
-    });
     this.auto = Variable.isAuto;
     this.events.subscribe("FnData:isAuto", (data) => {
       this.auto = data;
     });
   }
+  initFn51() {
+    this.getRoomDeviceState(Variable.GetFnData('51'));
+    this.events.subscribe("FnData:51", (data) => {
+      this.getRoomDeviceState(data);
+      // this.stateData = data;
 
+    });
+  }
+  getRoomDeviceState(data: any) {
+    let result = {};
+    this.sumNumOpen = 0;
+    this.deviceDataListShow.forEach(element => {
+      let state = Boolean(data[element.F_ID]);
+      result[element.F_ID] = state;
+      if (state) this.sumNumOpen++;
+    });
+    this.stateData = result;
+  }
   ionViewDidLoad() {
 
   }
