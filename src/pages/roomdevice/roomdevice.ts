@@ -54,19 +54,17 @@ export class RoomdevicePage {
     }
 
     this.auto = Variable.isAuto;
-    this.events.subscribe("FnData:isAuto", (data) => {
-      this.auto = data;
-    });
+
+    this.events.subscribe("FnData:isAuto", this.eventsIsAutoHandler);
   }
+  eventsIsAutoHandler = (data: any) => {
+    this.auto = data;
+  };
   initFn51() {
     this.getRoomDeviceState(Variable.GetFnData('51'));
-    this.events.subscribe("FnData:51", (data) => {console.log("getRoomDeviceState51")
-      this.getRoomDeviceState(data);
-      // this.stateData = data;
-
-    });
+    this.events.subscribe("FnData:51", this.getRoomDeviceState);
   }
-  getRoomDeviceState(data: any) {
+  getRoomDeviceState = (data: any) => {
     let result = {};
     this.sumNumOpen = 0;
     this.deviceDataListShow.forEach(element => {
@@ -84,8 +82,8 @@ export class RoomdevicePage {
 
   }
   ionViewWillUnload() {
-    this.events.unsubscribe("FnData:51", () => { });
-    this.events.unsubscribe("FnData:isAuto", () => { });
+    this.events.unsubscribe("FnData:51", this.getRoomDeviceState);
+    this.events.unsubscribe("FnData:isAuto", this.eventsIsAutoHandler);
 
   }
   goSetting(data: any) {

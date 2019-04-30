@@ -62,16 +62,16 @@ export class HomePage {
 
   }
   fnDataSubscribe() {
-    console.log("fnDataSubscribe");
+    // console.log("fnDataSubscribe");
     this.modeID = Variable.GetFnData('51', '-2');
     this.events.subscribe("FnData:51", (data) => {
-      console.log("home-fn51");
+      // console.log("home-fn51");
       if (data) {
         this.modeID = data['-2'];
       }
     });
     this.events.subscribe("FnData:50", (res) => {
-      this.getEnergyDataFn50(res); console.log("home-fn50");
+      this.getEnergyDataFn50(res); 
     });
     this.events.subscribe("FnData:54", (res) => {
       this.getEnergyDataFn54(res);
