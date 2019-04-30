@@ -29,20 +29,14 @@ export class ValveEastcourtSettingPage {
     this.name = this.navParams.get("name");
     let fn51Data = Variable.GetFnData('51');
     this.getDeviceState(fn51Data);
-    this.events.subscribe("FnData:51", (res) => {
-      this.getDeviceState(res);
-    });
+    this.events.subscribe("FnData:51", this.eventsFn51Handler);
 
     this.auto = Variable.isAuto;
-    this.events.subscribe("FnData:isAuto", (data) => {
-      this.auto = data;
-    });
+    this.events.subscribe("FnData:isAuto", this.eventsFnAutoHandler);
 
     let fn55Data = Variable.GetFnData('55');
     this.getTimerState(fn55Data);
-    this.events.subscribe("FnData:55", (res) => {
-      this.getTimerState(res);
-    });
+    this.events.subscribe("FnData:55", this.eventsFn55Handler);
   }
   private getTimerState(data: any) {
     if (data) {
@@ -67,9 +61,20 @@ export class ValveEastcourtSettingPage {
     Variable.socketObject.setDeviceState(this.id, this.name, state);
   }
   ionViewDidLeave() {
-    this.events.unsubscribe("FnData:51", () => { });
-    this.events.unsubscribe("FnData:55", () => { });
-    this.events.unsubscribe("FnData:isAuto", () => { });
+    this.events.unsubscribe("FnData:51", this.eventsFn51Handler);
+    this.events.unsubscribe("FnData:55", this.eventsFn55Handler);
+    this.events.unsubscribe("FnData:isAuto", this.eventsFnAutoHandler);
 
   }
+  /**start**/
+  private eventsFnAutoHandler = (data: any) => {
+    this.auto = data;
+  }
+  private eventsFn51Handler = (data: any) => {
+    this.getDeviceState(data);
+  }
+  private eventsFn55Handler = (data: any) => {
+    this.getTimerState(data);
+  }
+  /**end***/
 }

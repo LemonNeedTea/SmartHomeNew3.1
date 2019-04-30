@@ -28,18 +28,12 @@ export class LiftSettingPage {
     this.name = this.navParams.get("name");
     let fn51Data = Variable.GetFnData('51');
     this.getDeviceState(fn51Data);
-    this.events.subscribe("FnData:51", (res) => {
-      this.getDeviceState(res);
-    });
+    this.events.subscribe("FnData:51", this.eventsFn51Handler);
     this.f50Data = Variable.GetFnData('50');
-    this.events.subscribe("FnData:50", (res) => {
-      this.f50Data = res;
-    });
+    this.events.subscribe("FnData:50", this.eventsFn50Handler);
 
     this.auto = Variable.isAuto;
-    this.events.subscribe("FnData:isAuto", (data) => {
-      this.auto = data;
-    });
+    this.events.subscribe("FnData:isAuto", this.eventsFnAutoHandler);
   }
 
   ionViewDidLoad() {
@@ -53,9 +47,20 @@ export class LiftSettingPage {
     Variable.socketObject.setDeviceState(this.id, this.name, state);
   }
   ionViewDidLeave() {
-    this.events.unsubscribe("FnData:50",()=>{});
-    this.events.unsubscribe("FnData:51",()=>{});
-    this.events.unsubscribe("FnData:isAuto",()=>{});
+    this.events.unsubscribe("FnData:50", this.eventsFn50Handler);
+    this.events.unsubscribe("FnData:51", this.eventsFn51Handler);
+    this.events.unsubscribe("FnData:isAuto", this.eventsFnAutoHandler);
   }
+  /**start**/
+  private eventsFnAutoHandler = (data: any) => {
+    this.auto = data;
+  }
+  private eventsFn51Handler = (data: any) => {
+    this.getDeviceState(data);
+  }
+  private eventsFn50Handler = (data: any) => {
+    this.f50Data = data;
+  }
+  /**end***/
 
 }

@@ -30,6 +30,11 @@ export class WellpumpPage {
   f52Data: any;
   state: boolean;
   auto: boolean;
+
+  levelChart: any;
+  levelGuide: any;
+  levelData: any;
+
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -42,18 +47,12 @@ export class WellpumpPage {
     this.name = this.navParams.get('name');
     let fn51Data = Variable.GetFnData('51');
     this.getDeviceState(fn51Data);
-    this.events.subscribe("FnData:51", (res) => {
-      this.getDeviceState(res);
-    });
+    this.events.subscribe("FnData:51", this.eventsFn51Handler);
 
     this.f50Data = Variable.GetFnData('50');
-    this.events.subscribe("FnData:50", (res) => {
-      this.f50Data = res;
-    });
+    this.events.subscribe("FnData:50", this.eventsFn50Handler);
     this.auto = Variable.isAuto;
-    this.events.subscribe("FnData:isAuto", (data) => {
-      this.auto = data;
-    });
+    this.events.subscribe("FnData:isAuto", this.eventsFnAutoHandler);
   }
   getDeviceState(data: any) {
     if (data) {
@@ -71,22 +70,22 @@ export class WellpumpPage {
   ionViewWillEnter() {
 
   }
-  ionViewDidLeave() {
-    this.events.unsubscribe("FnData:50",()=>{});
-    this.events.unsubscribe("FnData:51",()=>{});
-    this.events.unsubscribe("FnData:50",()=>{});
-    this.events.unsubscribe("FnData:isAuto",()=>{});
+  ionViewWillUnload() {console.log("leave");
+    this.events.unsubscribe("FnData:50", this.eventsFn50Handler);
+    this.events.unsubscribe("FnData:51", this.eventsFn51Handler);
+    this.events.unsubscribe("FnData:52", this.eventsFn52Handler);
+    this.events.unsubscribe("FnData:isAuto", this.eventsFnAutoHandler);
   }
-  changeData(chart, guide: any, data: any) {
-    guide.position = [data[0].key, data[0].value];
-    guide.content = data[0].value;
-    chart.changeData(data);
-    chart.repaint();
+  changeData() {
+    this.levelGuide.position = [this.levelData[0].key, this.levelData[0].value];
+    this.levelGuide.content = this.levelData[0].value;
+    this.levelChart.changeData(this.levelData);
+    this.levelChart.repaint();
   }
   getWaterLevelChart() {
     let fnData = Variable.GetFnData('52');
     let value = this.getWaterlevelData(fnData);
-    let data = [
+    this.levelData = [
       { key: '', value: value, type: '井水液位' }
     ];
     let config = {
@@ -95,8 +94,8 @@ export class WellpumpPage {
       min: 0,
       tooltip: false
     };
-    let chart = this.chart.getBarChart('mountNode', data, config);
-    const guide = chart.guide().text({
+    this.levelChart = this.chart.getBarChart('mountNode', this.levelData, config);
+    this.levelGuide = this.levelChart.guide().text({
       position: [0, 0],
       content: 0,
       style: {
@@ -105,14 +104,9 @@ export class WellpumpPage {
       },
       offsetY: -5
     });
-    this.changeData(chart, guide, data);
+    this.changeData();
 
-    this.events.subscribe("FnData:52", (res) => {
-      let value = this.getWaterlevelData(res);
-      data[0].value = value;
-      this.changeData(chart, guide, data);
-
-    });
+    this.events.subscribe("FnData:52", this.eventsFn52Handler);
 
   }
   getWaterlevelData(data: any) {
@@ -146,5 +140,21 @@ export class WellpumpPage {
     });
     profileModal.present();
   }
+  /**start**/
+  private eventsFnAutoHandler = (data: any) => {
+    this.auto = data;
+  }
+  private eventsFn51Handler = (data: any) => {
+    this.getDeviceState(data);
+  }
+  private eventsFn50Handler = (data: any) => {
+    this.f50Data = data;
+  }
+  private eventsFn52Handler = (data: any) => {
+    let value = this.getWaterlevelData(data);
+    this.levelData[0].value = value;
+    this.changeData();
 
+  }
+  /**end***/
 }
