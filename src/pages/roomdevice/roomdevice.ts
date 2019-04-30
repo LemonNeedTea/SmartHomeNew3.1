@@ -113,6 +113,9 @@ export class RoomdevicePage {
       case "setting_lift": {
         page = LiftSettingPage; break
       }
+      default:{
+        page=data['F_SettingRouter'];break;
+      }
     }
     if (page) {
       let params = {
