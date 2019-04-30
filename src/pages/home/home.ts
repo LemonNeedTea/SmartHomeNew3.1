@@ -64,7 +64,8 @@ export class HomePage {
   fnDataSubscribe() {
     console.log("fnDataSubscribe");
     this.modeID = Variable.GetFnData('51', '-2');
-    this.events.subscribe("FnData:51", (data) => {console.log("home-fn51");
+    this.events.subscribe("FnData:51", (data) => {
+      console.log("home-fn51");
       if (data) {
         this.modeID = data['-2'];
       }
@@ -77,14 +78,14 @@ export class HomePage {
     });
   }
   ionViewDidLeave() {
-    console.log("ionViewWillLeave");
-    this.events.unsubscribe("FnData:51", () => { });
-    this.events.unsubscribe("FnData:50", () => { });
-    this.events.unsubscribe("FnData:54", () => { });
+    // console.log("ionViewWillLeave");
+    // this.events.unsubscribe("FnData:51", () => { });
+    // this.events.unsubscribe("FnData:50", () => { });
+    // this.events.unsubscribe("FnData:54", () => { });
 
   }
   ionViewDidEnter() {
-    this.fnDataSubscribe();
+    // this.fnDataSubscribe();
   }
 
   ionViewDidLoad() {
@@ -99,6 +100,7 @@ export class HomePage {
     this.deviceRequest.getDeviceMode().then(res => {
       this.modeDataList = res;
     }, err => { });
+    this.fnDataSubscribe();
   }
   goModePublicSetting() {
     this.navCtrl.push(ModePublicSettingPage);

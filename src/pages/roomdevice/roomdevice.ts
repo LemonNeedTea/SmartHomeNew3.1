@@ -60,7 +60,7 @@ export class RoomdevicePage {
   }
   initFn51() {
     this.getRoomDeviceState(Variable.GetFnData('51'));
-    this.events.subscribe("FnData:51", (data) => {
+    this.events.subscribe("FnData:51", (data) => {console.log("getRoomDeviceState51")
       this.getRoomDeviceState(data);
       // this.stateData = data;
 
