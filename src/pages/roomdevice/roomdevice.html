@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{roomName}}{{"("+sumNumOpen+"/"+deviceDataListShow.length+")"}}</ion-title>
+    <ion-title>{{roomName}}<span *ngIf="!auto">{{"("+sumNumOpen+"/"+deviceDataListShow.length+")"}}</span><span *ngIf="auto" style="color:red;">(手动模式-不可控)</span></ion-title>
   </ion-navbar>
 
 </ion-header>

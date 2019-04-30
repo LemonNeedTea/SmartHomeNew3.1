@@ -79,6 +79,7 @@ export class DevicePage {
   // }
   getTypeDeviceNum(data: any) {
     this.sumNumOPen = 0;
+    let sumNumOPen = 0;
     let result = JSON.parse(JSON.stringify(this.openStateNumArr));
     for (const key in data) {
       if (data.hasOwnProperty(key) && Number(key) > 0) {
@@ -86,11 +87,12 @@ export class DevicePage {
         let typeID = this.deviceDataList[key];
         let element = data[key];
         if (Boolean(element)) {
-          this.sumNumOPen++;
+          sumNumOPen++;
           result[typeID]++;
         }
       }
     };
+    this.sumNumOPen = sumNumOPen;
     this.stateData = result;
   }
   getRightCateData(typeID: string) {

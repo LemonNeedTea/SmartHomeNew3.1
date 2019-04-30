@@ -225,9 +225,9 @@ export class ToolsProvider {
     }
     return result;
   }
-  presentAlarmAlert(data: string) {
+  presentAlarmAlert(data: string, title?: string) {
     let alert = this.alertCtrl.create({
-      title: `报警信息<img />`,
+      title: title ? title : `报警信息<img />`,
       // subTitle: ,
       cssClass: "alarm",
       message: `

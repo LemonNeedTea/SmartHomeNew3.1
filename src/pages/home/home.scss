@@ -33,21 +33,21 @@ page-home {
       // .header-div {
       //   padding: 0 10px 0 10px;
       // }
-      .col-left{
-        p{
+      .col-left {
+        p {
           margin-top: 6px !important;
           color: white;
           // margin-left: 0px !important;
-    font-size: 1.2rem;
+          font-size: 1.2rem;
         }
       }
-      .col-right{
+      .col-right {
         color: white;
         display: flex;
-    align-items: center;
-    img{
-      width: 16px;
-    }
+        align-items: center;
+        img {
+          width: 16px;
+        }
       }
       .city {
         border: 1px solid white;
@@ -130,7 +130,8 @@ page-home {
     margin-bottom: 0;
   }
   .mode-card-selected {
-    background-image: linear-gradient(-139deg, #5ab5f7 3%, #51aff4 91%);
+    // background-image: linear-gradient(-139deg, #5ab5f7 3%, #51aff4 91%);
+    background-color: #52a1f3;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
     color: white;
 

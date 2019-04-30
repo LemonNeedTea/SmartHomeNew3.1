@@ -46,12 +46,13 @@ export class SocketHelpProvider {
     closeSocket() {
         this.socket.ws.close();
         clearInterval(this.interval);
-        this.events.unsubscribe("FnData:51", null);
-        this.events.unsubscribe("FnData:50", null);
-        this.events.unsubscribe("FnData:52", null);
-        this.events.unsubscribe("FnData:53", null);
-        this.events.unsubscribe("FnData:54", null);
-        this.events.unsubscribe("FnData:isAuto", null);
+        this.events["_channels"]=[];
+        // this.events.unsubscribe("FnData:51", null);
+        // this.events.unsubscribe("FnData:50", null);
+        // this.events.unsubscribe("FnData:52", null);
+        // this.events.unsubscribe("FnData:53", null);
+        // this.events.unsubscribe("FnData:54", null);
+        // this.events.unsubscribe("FnData:isAuto", null);
     }
     setDeviceState(id: string, name: string, state: string, speech: false) {
         var param = {

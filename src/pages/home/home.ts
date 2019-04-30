@@ -70,9 +70,12 @@ export class HomePage {
         this.modeID = data['-2'];
       }
     });
+    this.getEnergyDataFn50(Variable.GetFnData('50'));
     this.events.subscribe("FnData:50", (res) => {
-      this.getEnergyDataFn50(res); 
+      console.log("home-fn50");
+      this.getEnergyDataFn50(res);
     });
+    this.getEnergyDataFn50(Variable.GetFnData('54'));
     this.events.subscribe("FnData:54", (res) => {
       this.getEnergyDataFn54(res);
     });
@@ -82,6 +85,10 @@ export class HomePage {
     // this.events.unsubscribe("FnData:51", () => { });
     // this.events.unsubscribe("FnData:50", () => { });
     // this.events.unsubscribe("FnData:54", () => { });
+
+  }
+  ionViewWillUnload() {
+    // console.log("ionViewWillUnload");
 
   }
   ionViewDidEnter() {
@@ -109,6 +116,18 @@ export class HomePage {
     this.navCtrl.push(ModeSettingPage, { mode: mode });
   }
   setMode(id: string, name: string) {
+    let auto = Variable.isAuto;
+    if (auto) {
+      // alert("手动模式，不可控");
+      // this.alertCtrl.create({
+      //   title: '提示！',
+      //   cssClass: "alarm",
+      //   message:'手动模式，不可控！',
+      //   buttons: ['OK']
+      // }).present();
+      this.tools.presentAlarmAlert("手动模式，不可控", "提示");
+      return;
+    }
     this.presentConfirm(name).then(res => {
       Variable.socketObject.setMode(id, name);
     });
