@@ -20,9 +20,9 @@ export class chartToolsProvider {
         }
         const chart = new F2.Chart({
             id: id,
-            height: 250,
+            height: 280,
             pixelRatio: window.devicePixelRatio,
-            padding: [35, 'auto', 40, 'auto'],
+            padding: [50, 'auto', 50, 'auto'],
         });
         if (config['dw']) {
             chart.guide().text({
@@ -32,7 +32,7 @@ export class chartToolsProvider {
                     textBaseline: 'middle',
                     textAlign: 'center'
                 },
-                offsetY: -14
+                offsetY: -30
             });
         };
         chart.axis('key', {
