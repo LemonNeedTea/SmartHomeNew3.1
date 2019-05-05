@@ -3,6 +3,8 @@ import F2 from '@antv/f2';
 
 @Injectable()
 export class chartToolsProvider {
+    private chartObj: any;
+
     constructor() {
 
     }
@@ -13,6 +15,9 @@ export class chartToolsProvider {
         return this.getChart(id, 'bar', data, config);
     }
     getChart(id: string, type: string, data: any, config: any) {
+        if (this.chartObj) {
+            this.chartObj.clear();
+        }
         const chart = new F2.Chart({
             id: id,
             height: 250,
@@ -40,10 +45,10 @@ export class chartToolsProvider {
         chart.legend({
             align: 'right',
             itemWidth: 50
-          });
+        });
         let key = {
-            tickCount: 12, 
-            isRounding:true,
+            tickCount: 12,
+            isRounding: true,
             formatter: function (res) {
                 return res;
             }
@@ -90,7 +95,8 @@ export class chartToolsProvider {
         }
         chart.source(data);
         chart.render();
-        return chart;
+        // return chart;
+        this.chartObj = chart;
     }
 
 }
