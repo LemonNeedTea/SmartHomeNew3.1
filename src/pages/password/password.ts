@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, ViewController, MenuController, App ,IonicPage} from 'ionic-angular';
+import { NavController, ViewController, MenuController, App, IonicPage } from 'ionic-angular';
 import { DeviceRequestsProvider, LoginRequestsProvider } from '../../providers/tools/requests'
 import { ToolsProvider } from '../../providers/tools/tools';
 import { LoginPage } from '../login/login';
