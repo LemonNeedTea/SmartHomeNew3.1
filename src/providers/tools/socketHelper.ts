@@ -24,7 +24,7 @@ export class SocketHelpProvider {
        * 启动websocket
        */
     startSocket() {
-        this.events.publish("FnData:51");
+        // this.events.publish("FnData:51");
         // this.events.publish("FnData:50");
         // this.events.publish("FnData:54");
         this.socket.createObservableSocket(this.tools.getUserName()).subscribe(res => {
