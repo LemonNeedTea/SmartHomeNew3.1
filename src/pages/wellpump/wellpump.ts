@@ -3,10 +3,10 @@ import { IonicPage, NavController, NavParams, Events, ModalController } from 'io
 import { Variable } from '../../providers/model/variable';
 import { chartToolsProvider } from '../../providers/tools/chart';
 import { DeviceRequestsProvider } from '../../providers/tools/requests';
-import { WellpumpqueryPage } from '../wellpumpquery/wellpumpquery';
+// import { WellpumpqueryPage } from '../wellpumpquery/wellpumpquery';
 import { ToolsProvider } from '../../providers/tools/tools';
 import { EnumDateType, EnumChartType } from '../../providers/model/enumdata';
-import { TimerPumpPage } from '../timer/timer-pump/timer-pump';
+// import { TimerPumpPage } from '../timer/timer-pump/timer-pump';
 
 
 
@@ -132,10 +132,10 @@ export class WellpumpPage {
 
   }
   goWellPumpQuery() {
-    this.navCtrl.push(WellpumpqueryPage, { name: '井水液位', type: EnumChartType.WellPump })
+    this.navCtrl.push('WellpumpqueryPage', { name: '井水液位', type: EnumChartType.WellPump })
   }
   presentShowModal() {
-    let profileModal = this.modalCtrl.create(TimerPumpPage, { name: this.name });
+    let profileModal = this.modalCtrl.create('TimerPumpPage', { name: this.name });
     profileModal.onDidDismiss(data => {
     });
     profileModal.present();

@@ -33,12 +33,12 @@ export class SocketHelpProvider {
 
             setTimeout(() => {
                 this.startSocket();
-            }, 1000);
+            }, 2000);
 
         }, () => {
             setTimeout(() => {
                 this.startSocket();
-            }, 1000);
+            }, 2000);
         });
         // Variable.socketObject = this.socket;
     }

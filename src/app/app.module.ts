@@ -40,34 +40,34 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { RoomPage } from '../pages/room/room';
 import { DevicePage } from '../pages/device/device';
 import { EnergyPage } from '../pages/energy/energy';
-import { WellpumpPage } from '../pages/wellpump/wellpump';
-import { WellpumpqueryPage } from '../pages/wellpumpquery/wellpumpquery';
-import { LinechartPage } from '../pages/linechart/linechart';
-import { PopoverPage } from '../pages/popover/popover';
-import { EnergyQueryPage } from '../pages/energy-query/energy-query';
-import { BarchartPage } from '../pages/barchart/barchart';
-import { MessageHistoryPage } from '../pages/message-history/message-history';
-import { TimerPumpPage } from '../pages/timer/timer-pump/timer-pump';
-import { CurtainSettingPage } from '../pages/device-setting/curtain-setting/curtain-setting';
-import { DoorSettingPage } from '../pages/device-setting/door-setting/door-setting';
-import { LiftSettingPage } from '../pages/device-setting/lift-setting/lift-setting';
-import { PumpEastnorthpoolSettingPage } from '../pages/device-setting/pump-eastnorthpool-setting/pump-eastnorthpool-setting';
-import { PumpNorthcourtSettingPage } from '../pages/device-setting/pump-northcourt-setting/pump-northcourt-setting';
-import { ValveEastcourtSettingPage } from '../pages/device-setting/valve-eastcourt-setting/valve-eastcourt-setting';
-import { ValveEastnorthpoolSettingPage } from '../pages/device-setting/valve-eastnorthpool-setting/valve-eastnorthpool-setting';
-import { PumpEastnorthpoolTimerPage } from '../pages/timer/pump-eastnorthpool-timer/pump-eastnorthpool-timer';
-import { PumpNorthcourtTimerPage } from '../pages/timer/pump-northcourt-timer/pump-northcourt-timer';
-import { ValveEastcourtTimerPage } from '../pages/timer/valve-eastcourt-timer/valve-eastcourt-timer';
-import { ValveEastnorthpoolTimerPage } from '../pages/timer/valve-eastnorthpool-timer/valve-eastnorthpool-timer';
-import { ModePublicSettingPage } from '../pages/mode-public-setting/mode-public-setting';
-import { ModeSettingPage } from '../pages/mode-setting/mode-setting';
-import { ModeAirseasonsonTimerPage } from '../pages/timer/mode-airseasonson-timer/mode-airseasonson-timer';
-import { ModeCurtainTimerPage } from '../pages/timer/mode-curtain-timer/mode-curtain-timer';
-import { ModeLightJwTimerPage } from '../pages/timer/mode-light-jw-timer/mode-light-jw-timer';
-import { ModeLightTimerPage } from '../pages/timer/mode-light-timer/mode-light-timer';
-import { ModeDeviceSelectedSettingPage } from '../pages/mode-device-selected-setting/mode-device-selected-setting';
-import { PasswordPage } from '../pages/password/password';
-import { RoomdevicePage } from '../pages/roomdevice/roomdevice';
+// import { WellpumpPage } from '../pages/wellpump/wellpump';
+// import { WellpumpqueryPage } from '../pages/wellpumpquery/wellpumpquery';
+// import { LinechartPage } from '../pages/linechart/linechart';
+// import { PopoverPage } from '../pages/popover/popover';
+// import { EnergyQueryPage } from '../pages/energy-query/energy-query';
+// import { BarchartPage } from '../pages/barchart/barchart';
+// import { MessageHistoryPage } from '../pages/message-history/message-history';
+// import { TimerPumpPage } from '../pages/timer/timer-pump/timer-pump';
+// import { CurtainSettingPage } from '../pages/device-setting/curtain-setting/curtain-setting';
+// import { DoorSettingPage } from '../pages/device-setting/door-setting/door-setting';
+// import { LiftSettingPage } from '../pages/device-setting/lift-setting/lift-setting';
+// import { PumpEastnorthpoolSettingPage } from '../pages/device-setting/pump-eastnorthpool-setting/pump-eastnorthpool-setting';
+// import { PumpNorthcourtSettingPage } from '../pages/device-setting/pump-northcourt-setting/pump-northcourt-setting';
+// import { ValveEastcourtSettingPage } from '../pages/device-setting/valve-eastcourt-setting/valve-eastcourt-setting';
+// import { ValveEastnorthpoolSettingPage } from '../pages/device-setting/valve-eastnorthpool-setting/valve-eastnorthpool-setting';
+// import { PumpEastnorthpoolTimerPage } from '../pages/timer/pump-eastnorthpool-timer/pump-eastnorthpool-timer';
+// import { PumpNorthcourtTimerPage } from '../pages/timer/pump-northcourt-timer/pump-northcourt-timer';
+// import { ValveEastcourtTimerPage } from '../pages/timer/valve-eastcourt-timer/valve-eastcourt-timer';
+// import { ValveEastnorthpoolTimerPage } from '../pages/timer/valve-eastnorthpool-timer/valve-eastnorthpool-timer';
+// import { ModePublicSettingPage } from '../pages/mode-public-setting/mode-public-setting';
+// import { ModeSettingPage } from '../pages/mode-setting/mode-setting';
+// import { ModeAirseasonsonTimerPage } from '../pages/timer/mode-airseasonson-timer/mode-airseasonson-timer';
+// import { ModeCurtainTimerPage } from '../pages/timer/mode-curtain-timer/mode-curtain-timer';
+// import { ModeLightJwTimerPage } from '../pages/timer/mode-light-jw-timer/mode-light-jw-timer';
+// import { ModeLightTimerPage } from '../pages/timer/mode-light-timer/mode-light-timer';
+// import { ModeDeviceSelectedSettingPage } from '../pages/mode-device-selected-setting/mode-device-selected-setting';
+// import { PasswordPage } from '../pages/password/password';
+// import { RoomdevicePage } from '../pages/roomdevice/roomdevice';
 
 
 
@@ -87,34 +87,34 @@ import { ComponentsModule } from '../components/components.module'
     RoomPage,
     DevicePage,
     EnergyPage,
-    WellpumpPage,
-    WellpumpqueryPage,
-    LinechartPage,
-    PopoverPage,
-    EnergyQueryPage,
-    BarchartPage,
-    MessageHistoryPage,
-    TimerPumpPage,
-    CurtainSettingPage,
-    DoorSettingPage,
-    LiftSettingPage,
-    PumpEastnorthpoolSettingPage,
-    PumpNorthcourtSettingPage,
-    ValveEastcourtSettingPage,
-    ValveEastnorthpoolSettingPage,
-    PumpEastnorthpoolTimerPage,
-    PumpNorthcourtTimerPage,
-    ValveEastcourtTimerPage,
-    ValveEastnorthpoolTimerPage,
-    ModePublicSettingPage,
-    ModeSettingPage,
-    ModeLightTimerPage,
-    ModeLightJwTimerPage,
-    ModeCurtainTimerPage,
-    ModeAirseasonsonTimerPage,
-    ModeDeviceSelectedSettingPage,
-    PasswordPage,
-    RoomdevicePage
+    // WellpumpPage,
+    // WellpumpqueryPage,
+    // LinechartPage,
+    // PopoverPage,
+    // EnergyQueryPage,
+    // BarchartPage,
+    // MessageHistoryPage,
+    // TimerPumpPage,
+    // CurtainSettingPage,
+    // DoorSettingPage,
+    // LiftSettingPage,
+    // PumpEastnorthpoolSettingPage,
+    // PumpNorthcourtSettingPage,
+    // ValveEastcourtSettingPage,
+    // ValveEastnorthpoolSettingPage,
+    // PumpEastnorthpoolTimerPage,
+    // PumpNorthcourtTimerPage,
+    // ValveEastcourtTimerPage,
+    // ValveEastnorthpoolTimerPage,
+    // ModePublicSettingPage,
+    // ModeSettingPage,
+    // ModeLightTimerPage,
+    // ModeLightJwTimerPage,
+    // ModeCurtainTimerPage,
+    // ModeAirseasonsonTimerPage,
+    // ModeDeviceSelectedSettingPage,
+    // PasswordPage,
+    // RoomdevicePage
   ],
   imports: [
     BrowserModule,
@@ -137,34 +137,34 @@ import { ComponentsModule } from '../components/components.module'
     RoomPage,
     DevicePage,
     EnergyPage,
-    WellpumpPage,
-    WellpumpqueryPage,
-    LinechartPage,
-    PopoverPage,
-    EnergyQueryPage,
-    BarchartPage,
-    MessageHistoryPage,
-    TimerPumpPage,
-    CurtainSettingPage,
-    DoorSettingPage,
-    LiftSettingPage,
-    PumpEastnorthpoolSettingPage,
-    PumpNorthcourtSettingPage,
-    ValveEastcourtSettingPage,
-    ValveEastnorthpoolSettingPage,
-    PumpEastnorthpoolTimerPage,
-    PumpNorthcourtTimerPage,
-    ValveEastcourtTimerPage,
-    ValveEastnorthpoolTimerPage,
-    ModePublicSettingPage,
-    ModeSettingPage,
-    ModeLightTimerPage,
-    ModeLightJwTimerPage,
-    ModeCurtainTimerPage,
-    ModeAirseasonsonTimerPage,
-    ModeDeviceSelectedSettingPage,
-    PasswordPage,
-    RoomdevicePage
+    // WellpumpPage,
+    // WellpumpqueryPage,
+    // LinechartPage,
+    // PopoverPage,
+    // EnergyQueryPage,
+    // BarchartPage,
+    // MessageHistoryPage,
+    // TimerPumpPage,
+    // CurtainSettingPage,
+    // DoorSettingPage,
+    // LiftSettingPage,
+    // PumpEastnorthpoolSettingPage,
+    // PumpNorthcourtSettingPage,
+    // ValveEastcourtSettingPage,
+    // ValveEastnorthpoolSettingPage,
+    // PumpEastnorthpoolTimerPage,
+    // PumpNorthcourtTimerPage,
+    // ValveEastcourtTimerPage,
+    // ValveEastnorthpoolTimerPage,
+    // ModePublicSettingPage,
+    // ModeSettingPage,
+    // ModeLightTimerPage,
+    // ModeLightJwTimerPage,
+    // ModeCurtainTimerPage,
+    // ModeAirseasonsonTimerPage,
+    // ModeDeviceSelectedSettingPage,
+    // PasswordPage,
+    // RoomdevicePage
   ],
   providers: [
     StatusBar,

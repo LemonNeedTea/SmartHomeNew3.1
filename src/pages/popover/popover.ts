@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController, App } from 'ionic-angular';
-import { WellpumpqueryPage } from '../wellpumpquery/wellpumpquery';
+// import { WellpumpqueryPage } from '../wellpumpquery/wellpumpquery';
 
 
 /**

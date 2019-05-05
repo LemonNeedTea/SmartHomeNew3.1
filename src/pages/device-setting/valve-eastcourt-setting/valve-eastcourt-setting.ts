@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController, Events } from 'ionic-angular';
-import { ValveEastcourtTimerPage } from '../../timer/valve-eastcourt-timer/valve-eastcourt-timer';
+// import { ValveEastcourtTimerPage } from '../../timer/valve-eastcourt-timer/valve-eastcourt-timer';
 import { Variable } from '../../../providers/model/variable';
 /**
  * Generated class for the ValveEastcourtSettingPage page.
@@ -47,7 +47,7 @@ export class ValveEastcourtSettingPage {
   ionViewDidLoad() {
   }
   presentShowModal() {
-    let profileModal = this.modalCtrl.create(ValveEastcourtTimerPage);
+    let profileModal = this.modalCtrl.create('ValveEastcourtTimerPage');
     profileModal.onDidDismiss(data => {
     });
     profileModal.present();

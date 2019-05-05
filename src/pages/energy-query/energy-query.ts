@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ToolsProvider } from '../../providers/tools/tools';
-import { BarchartPage } from '../barchart/barchart';
+// import { BarchartPage } from '../barchart/barchart';
 import { EnumDateType } from '../../providers/model/enumdata';
 
 /**
@@ -60,7 +60,7 @@ export class EnergyQueryPage {
       }
     }
     params.Type = this.type;
-    this.navCtrl.push(BarchartPage, { params: params });
+    this.navCtrl.push('BarchartPage', { params: params });
   }
   timeRange(type: string) {
     let data;

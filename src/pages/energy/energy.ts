@@ -5,9 +5,9 @@ import { DeviceRequestsProvider } from '../../providers/tools/requests';
 import { chartToolsProvider } from '../../providers/tools/chart';
 import { Variable } from '../../providers/model/variable';
 import { PopoverController } from 'ionic-angular';
-import { PopoverPage } from '../popover/popover';
-import { WellpumpqueryPage } from '../wellpumpquery/wellpumpquery';
-import { EnergyQueryPage } from '../energy-query/energy-query';
+// import { PopoverPage } from '../popover/popover';
+// import { WellpumpqueryPage } from '../wellpumpquery/wellpumpquery';
+// import { EnergyQueryPage } from '../energy-query/energy-query';
 import { EnumEnergyType, EnumDateType, EnumChartType } from '../../providers/model/enumdata';
 
 /**
@@ -183,12 +183,12 @@ export class EnergyPage {
   }
   showPopover(myEvent) {
     let eleList = [
-      { name: '用电量查询', page: EnergyQueryPage, type: EnumChartType.Ele },
-      { name: '电负荷查询', page: WellpumpqueryPage, type: EnumChartType.FH },
-      { name: '空调负荷查询', page: WellpumpqueryPage, type: EnumChartType.Air },
+      { name: '用电量查询', page: 'EnergyQueryPage', type: EnumChartType.Ele },
+      { name: '电负荷查询', page: 'WellpumpqueryPage', type: EnumChartType.FH },
+      { name: '空调负荷查询', page: 'WellpumpqueryPage', type: EnumChartType.Air },
     ];
     let waterList = [
-      { name: '用水量查询', page: EnergyQueryPage, type: EnumChartType.Water }
+      { name: '用水量查询', page: 'EnergyQueryPage', type: EnumChartType.Water }
     ];
     let list;
     if (this.energyType == this.eleType) {
@@ -197,7 +197,7 @@ export class EnergyPage {
       list = waterList;
     }
 
-    let popover = this.popoverCtrl.create(PopoverPage, { list: list });
+    let popover = this.popoverCtrl.create('PopoverPage', { list: list });
     popover.present({
       ev: myEvent
     });

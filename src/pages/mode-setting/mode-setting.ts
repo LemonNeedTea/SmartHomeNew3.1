@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { DeviceRequestsProvider } from '../../providers/tools/requests';
-import { ModeDeviceSelectedSettingPage } from '../mode-device-selected-setting/mode-device-selected-setting';
+// import { ModeDeviceSelectedSettingPage } from '../mode-device-selected-setting/mode-device-selected-setting';
 import { deepCopy } from 'ionic-angular/umd/util/util';
 import { Variable } from '../../providers/model/variable';
 
@@ -43,7 +43,7 @@ export class ModeSettingPage {
   }
   presentShowModal() {
     let data: any = JSON.parse(JSON.stringify(this.dataList));
-    let profileModal = this.modalCtrl.create(ModeDeviceSelectedSettingPage, { dataList: data });
+    let profileModal = this.modalCtrl.create('ModeDeviceSelectedSettingPage', { dataList: data });
     profileModal.onDidDismiss(data => {
       if (data) {
         this.dataList = data;

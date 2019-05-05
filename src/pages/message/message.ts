@@ -3,8 +3,8 @@ import { NavController } from 'ionic-angular';
 import { HttpServicesProvider } from "../../providers/http-services/http-services";
 import { DeviceRequestsProvider } from '../../providers/tools/requests';
 import { PopoverController } from 'ionic-angular';
-import { WellpumpqueryPage } from '../wellpumpquery/wellpumpquery';
-import { PopoverPage } from '../popover/popover';
+// import { WellpumpqueryPage } from '../wellpumpquery/wellpumpquery';
+// import { PopoverPage } from '../popover/popover';
 import { EnumChartType } from '../../providers/model/enumdata';
 
 
@@ -44,7 +44,7 @@ export class MessagePage {
     this.typeDataList.forEach(element => {
       popoverList.push({
         name: element.F_Name,
-        page: WellpumpqueryPage,
+        page: 'WellpumpqueryPage',
         type: EnumChartType.Message,
         data: element
       });
@@ -55,7 +55,7 @@ export class MessagePage {
     //   { name: '空调负荷查询', page: WellpumpqueryPage, type: EnumChartType.Air },
     // ];
 
-    let popover = this.popoverCtrl.create(PopoverPage, { list: popoverList });
+    let popover = this.popoverCtrl.create('PopoverPage', { list: popoverList });
     popover.present({
       ev: myEvent
     });

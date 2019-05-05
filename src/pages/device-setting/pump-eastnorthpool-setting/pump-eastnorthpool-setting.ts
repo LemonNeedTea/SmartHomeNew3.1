@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController, Events } from 'ionic-angular';
-import { PumpEastnorthpoolTimerPage } from '../../timer/pump-eastnorthpool-timer/pump-eastnorthpool-timer';
+// import { PumpEastnorthpoolTimerPage } from '../../timer/pump-eastnorthpool-timer/pump-eastnorthpool-timer';
 import { Variable } from '../../../providers/model/variable';
 
 /**
@@ -57,7 +57,7 @@ export class PumpEastnorthpoolSettingPage {
 
   }
   presentShowModal() {
-    let profileModal = this.modalCtrl.create(PumpEastnorthpoolTimerPage);
+    let profileModal = this.modalCtrl.create('PumpEastnorthpoolTimerPage');
     profileModal.onDidDismiss(data => {
     });
     profileModal.present();

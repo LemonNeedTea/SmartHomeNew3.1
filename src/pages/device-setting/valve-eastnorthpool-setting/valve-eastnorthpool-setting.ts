@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Events, ModalController } from 'ionic-angular';
 import { Variable } from '../../../providers/model/variable';
-import { ValveEastnorthpoolTimerPage } from '../../timer/valve-eastnorthpool-timer/valve-eastnorthpool-timer';
+// import { ValveEastnorthpoolTimerPage } from '../../timer/valve-eastnorthpool-timer/valve-eastnorthpool-timer';
 /**
  * Generated class for the ValveEastnorthpoolSettingPage page.
  *
@@ -44,7 +44,7 @@ export class ValveEastnorthpoolSettingPage {
   ionViewDidLoad() {
   }
   presentShowModal() {
-    let profileModal = this.modalCtrl.create(ValveEastnorthpoolTimerPage);
+    let profileModal = this.modalCtrl.create('ValveEastnorthpoolTimerPage');
     profileModal.onDidDismiss(data => {
     });
     profileModal.present();

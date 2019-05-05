@@ -8,7 +8,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ToolsProvider } from '../providers/tools/tools';
 import { LoginRequestsProvider } from '../providers/tools/requests';
 import { Network } from '@ionic-native/network';
-import { PasswordPage } from '../pages/password/password';
+// import { PasswordPage } from '../pages/password/password';
 
 
 @Component({
@@ -49,7 +49,7 @@ export class MyApp {
     // 
   }
   pushPassword() {
-    this.modalCtrl.create(PasswordPage).present();
+    this.modalCtrl.create('PasswordPage').present();
   }
   /**
    * 开启网络状态监测

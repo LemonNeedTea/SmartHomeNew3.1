@@ -2,15 +2,15 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
 import { DeviceRequestsProvider } from '../../providers/tools/requests';
 import { Variable } from '../../providers/model/variable';
-import { WellpumpPage } from '../wellpump/wellpump';
-import { CurtainSettingPage } from '../device-setting/curtain-setting/curtain-setting';
-import { DoorSettingPage } from '../device-setting/door-setting/door-setting';
-import { LiftSettingPage } from '../device-setting/lift-setting/lift-setting';
-import { PumpEastnorthpoolSettingPage } from '../device-setting/pump-eastnorthpool-setting/pump-eastnorthpool-setting';
-import { PumpNorthcourtSettingPage } from '../device-setting/pump-northcourt-setting/pump-northcourt-setting';
-import { ValveEastcourtSettingPage } from '../device-setting/valve-eastcourt-setting/valve-eastcourt-setting';
-import { ValveEastnorthpoolSettingPage } from '../device-setting/valve-eastnorthpool-setting/valve-eastnorthpool-setting';
-import { RoomdevicePage } from '../../pages/roomdevice/roomdevice';
+// import { WellpumpPage } from '../wellpump/wellpump';
+// import { CurtainSettingPage } from '../device-setting/curtain-setting/curtain-setting';
+// import { DoorSettingPage } from '../device-setting/door-setting/door-setting';
+// import { LiftSettingPage } from '../device-setting/lift-setting/lift-setting';
+// import { PumpEastnorthpoolSettingPage } from '../device-setting/pump-eastnorthpool-setting/pump-eastnorthpool-setting';
+// import { PumpNorthcourtSettingPage } from '../device-setting/pump-northcourt-setting/pump-northcourt-setting';
+// import { ValveEastcourtSettingPage } from '../device-setting/valve-eastcourt-setting/valve-eastcourt-setting';
+// import { ValveEastnorthpoolSettingPage } from '../device-setting/valve-eastnorthpool-setting/valve-eastnorthpool-setting';
+// import { RoomdevicePage } from '../../pages/roomdevice/roomdevice';
 
 /**
  * Generated class for the DevicePage page.
@@ -111,28 +111,28 @@ export class DevicePage {
     let page: any;
     switch (data['F_SettingRouter']) {
       case "setting_pump": {
-        page = WellpumpPage; break;
+        page = 'WellpumpPage'; break;
       }
       case "setting_curtain": {
-        page = CurtainSettingPage; break
+        page = 'CurtainSettingPage'; break
       }
       case "setting_smartdoor": {
-        page = DoorSettingPage; break
+        page = 'DoorSettingPage'; break
       }
       case "setting-northPump": {
-        page = PumpEastnorthpoolSettingPage; break
+        page = 'PumpEastnorthpoolSettingPage'; break
       }
       case "setting_pg": {
-        page = PumpNorthcourtSettingPage; break
+        page = 'PumpNorthcourtSettingPage'; break
       }
       case "setting_dcf": {
-        page = ValveEastcourtSettingPage; break
+        page = 'ValveEastcourtSettingPage'; break
       }
       case "setting-eastNorthDCF": {
-        page = ValveEastnorthpoolSettingPage; break
+        page = 'ValveEastnorthpoolSettingPage'; break
       }
       case "setting_lift": {
-        page = LiftSettingPage; break
+        page = 'LiftSettingPage'; break
       }
     }
     if (page) {
@@ -144,6 +144,6 @@ export class DevicePage {
     }
   }
   goRoomDevice(id: string, name: string) {
-    this.navCtrl.push(RoomdevicePage, { id: id, name: name, isType: true });
+    this.navCtrl.push('RoomdevicePage', { id: id, name: name, isType: true });
   }
 }

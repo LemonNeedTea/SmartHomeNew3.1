@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ToolsProvider } from '../../providers/tools/tools';
-import { LinechartPage } from '../linechart/linechart';
+// import { LinechartPage } from '../linechart/linechart';
 import { EnumDateType, EnumChartType } from '../../providers/model/enumdata';
-import { MessageHistoryPage } from '../message-history/message-history';
+// import { MessageHistoryPage } from '../message-history/message-history';
 
 
 
@@ -40,9 +40,9 @@ export class WellpumpqueryPage {
   }
   goLineChartPage() {
     if (this.type == EnumChartType.Message) {
-      this.navCtrl.push(MessageHistoryPage, { StartDate: this.startDate, StopDate: this.stopDate, data: this.data });
+      this.navCtrl.push('MessageHistoryPage', { StartDate: this.startDate, StopDate: this.stopDate, data: this.data });
     } else {
-      this.navCtrl.push(LinechartPage, { StartDate: this.startDate, StopDate: this.stopDate, type: this.type })
+      this.navCtrl.push('LinechartPage', { StartDate: this.startDate, StopDate: this.stopDate, type: this.type })
     }
   }
 

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
-import { ModeAirseasonsonTimerPage } from '../timer/mode-airseasonson-timer/mode-airseasonson-timer';
-import { ModeCurtainTimerPage } from '../timer/mode-curtain-timer/mode-curtain-timer';
-import { ModeLightJwTimerPage } from '../timer/mode-light-jw-timer/mode-light-jw-timer';
-import { ModeLightTimerPage } from '../timer/mode-light-timer/mode-light-timer';
+// import { ModeAirseasonsonTimerPage } from '../timer/mode-airseasonson-timer/mode-airseasonson-timer';
+// import { ModeCurtainTimerPage } from '../timer/mode-curtain-timer/mode-curtain-timer';
+// import { ModeLightJwTimerPage } from '../timer/mode-light-jw-timer/mode-light-jw-timer';
+// import { ModeLightTimerPage } from '../timer/mode-light-timer/mode-light-timer';
 /**
  * Generated class for the ModePublicSettingPage page.
  *
@@ -25,17 +25,17 @@ export class ModePublicSettingPage {
   ionViewDidLoad() {
   }
   goCurtain() {
-    this.presentShowModal(ModeCurtainTimerPage);
+    this.presentShowModal('ModeCurtainTimerPage');
   }
   goLight() {
-    this.presentShowModal(ModeLightTimerPage);
+    this.presentShowModal('ModeLightTimerPage');
 
   }
   goAirSeason() {
-    this.presentShowModal(ModeAirseasonsonTimerPage);
+    this.presentShowModal('ModeAirseasonsonTimerPage');
   }
   goLightJW() {
-    this.presentShowModal(ModeLightJwTimerPage);
+    this.presentShowModal('ModeLightJwTimerPage');
 
   }
   presentShowModal(page: any) {

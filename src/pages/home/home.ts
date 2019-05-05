@@ -2,8 +2,8 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NavController, LoadingController, ModalController, Events, Header, AlertController } from 'ionic-angular';
 import { Variable } from '../../providers/model/variable';
 import { DeviceRequestsProvider } from '../../providers/tools/requests'
-import { ModePublicSettingPage } from '../mode-public-setting/mode-public-setting';
-import { ModeSettingPage } from '../mode-setting/mode-setting';
+// import { ModePublicSettingPage } from '../mode-public-setting/mode-public-setting';
+// import { ModeSettingPage } from '../mode-setting/mode-setting';
 import { ToolsProvider } from '../../providers/tools/tools';
 import { SpeechHelperProvider } from '../../providers/tools/speechHelper'
 
@@ -110,10 +110,10 @@ export class HomePage {
     this.fnDataSubscribe();
   }
   goModePublicSetting() {
-    this.navCtrl.push(ModePublicSettingPage);
+    this.navCtrl.push('ModePublicSettingPage');
   }
   goModeSetting(mode: any) {
-    this.navCtrl.push(ModeSettingPage, { mode: mode });
+    this.navCtrl.push('ModeSettingPage', { mode: mode });
   }
   setMode(id: string, name: string) {
     let auto = Variable.isAuto;
