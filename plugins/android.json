@@ -19,10 +19,6 @@
     "cordova-plugin-ionic-keyboard": {
       "PACKAGE_NAME": "nla.com.cn.smarthomenew3"
     },
-    "cordova-plugin-ionic-webview": {
-      "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
-      "PACKAGE_NAME": "nla.com.cn.smarthomenew3"
-    },
     "cordova-plugin-network-information": {
       "PACKAGE_NAME": "nla.com.cn.smarthomenew3"
     },
@@ -42,6 +38,10 @@
       "PACKAGE_NAME": "nla.com.cn.smarthomenew3"
     },
     "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "nla.com.cn.smarthomenew3"
+    },
+    "cordova-plugin-ionic-webview": {
+      "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
       "PACKAGE_NAME": "nla.com.cn.smarthomenew3"
     }
   },

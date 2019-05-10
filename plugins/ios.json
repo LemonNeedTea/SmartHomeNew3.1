@@ -34,6 +34,9 @@
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "nla.com.cn.smarthomenew3"
     },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "nla.com.cn.smarthomenew3"
+    },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "nla.com.cn.smarthomenew3"
     },
