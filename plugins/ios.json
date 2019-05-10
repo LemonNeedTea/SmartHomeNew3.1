@@ -48,6 +48,9 @@
     "cordova-plugin-add-swift-support": {
       "PACKAGE_NAME": "nla.com.cn.smarthomenew3"
     },
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "nla.com.cn.smarthomenew3"
+    },
     "es6-promise-plugin": {
       "PACKAGE_NAME": "nla.com.cn.smarthomenew3"
     }
