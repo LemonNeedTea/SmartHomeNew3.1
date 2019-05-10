@@ -1,5 +1,3 @@
-node_modules
 platforms
-plugins/cordova-plugin-baiduasrtts/src/ios/BDSClientLib/TTS/libBaiduSpeech_TTS_SDK.a
 plugins/cordova-plugin-baiduasrtts/src/ios/BDSClientLib/ASR/libBaiduSpeechSDK.a
-www
+plugins/cordova-plugin-baiduasrtts/src/ios/BDSClientLib/TTS/libBaiduSpeech_TTS_SDK.a
