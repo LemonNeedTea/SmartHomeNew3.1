@@ -1046,11 +1046,11 @@ var map = {
 		31
 	],
 	"../pages/device-setting/curtain-setting/curtain-setting.module": [
-		851,
+		850,
 		30
 	],
 	"../pages/device-setting/door-setting/door-setting.module": [
-		850,
+		851,
 		29
 	],
 	"../pages/device-setting/lift-setting/lift-setting.module": [
@@ -1094,19 +1094,19 @@ var map = {
 		34
 	],
 	"../pages/linechart/linechart.module": [
-		862,
+		865,
 		20
 	],
 	"../pages/login/login.module": [
-		863,
+		862,
 		33
 	],
 	"../pages/message-history/message-history.module": [
-		864,
+		863,
 		19
 	],
 	"../pages/mode-device-selected-setting/mode-device-selected-setting.module": [
-		865,
+		864,
 		18
 	],
 	"../pages/mode-public-setting/mode-public-setting.module": [
@@ -1114,15 +1114,15 @@ var map = {
 		17
 	],
 	"../pages/mode-setting/mode-setting.module": [
-		868,
+		867,
 		16
 	],
 	"../pages/password/password.module": [
-		869,
+		868,
 		15
 	],
 	"../pages/popover/popover.module": [
-		867,
+		869,
 		14
 	],
 	"../pages/room/room.module": [
@@ -1138,11 +1138,11 @@ var map = {
 		9
 	],
 	"../pages/timer/mode-curtain-timer/mode-curtain-timer.module": [
-		876,
+		873,
 		8
 	],
 	"../pages/timer/mode-light-jw-timer/mode-light-jw-timer.module": [
-		873,
+		875,
 		7
 	],
 	"../pages/timer/mode-light-timer/mode-light-timer.module": [
@@ -1150,11 +1150,11 @@ var map = {
 		6
 	],
 	"../pages/timer/pump-eastnorthpool-timer/pump-eastnorthpool-timer.module": [
-		877,
+		876,
 		12
 	],
 	"../pages/timer/pump-northcourt-timer/pump-northcourt-timer.module": [
-		875,
+		877,
 		5
 	],
 	"../pages/timer/timer-pump/timer-pump.module": [
@@ -1174,11 +1174,11 @@ var map = {
 		1
 	],
 	"../pages/timer/valve-northpool-timer/valve-northpool-timer.module": [
-		883,
+		882,
 		0
 	],
 	"../pages/wellpump/wellpump.module": [
-		882,
+		883,
 		11
 	],
 	"../pages/wellpumpquery/wellpumpquery.module": [
@@ -2027,7 +2027,7 @@ var SocketHelpProvider = (function () {
             UserName: this.tools.getUserName(),
             MonitorID: 1,
             DeviceID: id,
-            SetState: state
+            SetState: Number(state)
         };
         this.socket.sendMessage(param);
         this.tools.vibrate();
@@ -3049,8 +3049,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], { backButtonText: '', tabsHideOnSubPages: 'true' }, {
                     links: [
                         { loadChildren: '../pages/barchart/barchart.module#BarchartPageModule', name: 'BarchartPage', segment: 'barchart', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/device-setting/door-setting/door-setting.module#DoorSettingPageModule', name: 'DoorSettingPage', segment: 'door-setting', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/device-setting/curtain-setting/curtain-setting.module#CurtainSettingPageModule', name: 'CurtainSettingPage', segment: 'curtain-setting', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/device-setting/door-setting/door-setting.module#DoorSettingPageModule', name: 'DoorSettingPage', segment: 'door-setting', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/device-setting/lift-setting/lift-setting.module#LiftSettingPageModule', name: 'LiftSettingPage', segment: 'lift-setting', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/device-setting/pump-eastnorthpool-setting/pump-eastnorthpool-setting.module#PumpEastnorthpoolSettingPageModule', name: 'PumpEastnorthpoolSettingPage', segment: 'pump-eastnorthpool-setting', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/device-setting/pump-northcourt-setting/pump-northcourt-setting.module#PumpNorthcourtSettingPageModule', name: 'PumpNorthcourtSettingPage', segment: 'pump-northcourt-setting', priority: 'low', defaultHistory: [] },
@@ -3061,28 +3061,28 @@ var AppModule = (function () {
                         { loadChildren: '../pages/device/device.module#DevicePageModule', name: 'DevicePage', segment: 'device', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/energy-query/energy-query.module#EnergyQueryPageModule', name: 'EnergyQueryPage', segment: 'energy-query', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/energy/energy.module#EnergyPageModule', name: 'EnergyPage', segment: 'energy', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/linechart/linechart.module#LinechartPageModule', name: 'LinechartPage', segment: 'linechart', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/message-history/message-history.module#MessageHistoryPageModule', name: 'MessageHistoryPage', segment: 'message-history', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mode-device-selected-setting/mode-device-selected-setting.module#ModeDeviceSelectedSettingPageModule', name: 'ModeDeviceSelectedSettingPage', segment: 'mode-device-selected-setting', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/linechart/linechart.module#LinechartPageModule', name: 'LinechartPage', segment: 'linechart', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mode-public-setting/mode-public-setting.module#ModePublicSettingPageModule', name: 'ModePublicSettingPage', segment: 'mode-public-setting', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/popover/popover.module#PopoverPageModule', name: 'PopoverPage', segment: 'popover', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mode-setting/mode-setting.module#ModeSettingPageModule', name: 'ModeSettingPage', segment: 'mode-setting', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/password/password.module#PasswordPageModule', name: 'PasswordPage', segment: 'password', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/popover/popover.module#PopoverPageModule', name: 'PopoverPage', segment: 'popover', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room/room.module#RoomPageModule', name: 'RoomPage', segment: 'room', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/roomdevice/roomdevice.module#RoomdevicePageModule', name: 'RoomdevicePage', segment: 'roomdevice', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/mode-airseasonson-timer/mode-airseasonson-timer.module#ModeAirseasonsonTimerPageModule', name: 'ModeAirseasonsonTimerPage', segment: 'mode-airseasonson-timer', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/timer/mode-light-jw-timer/mode-light-jw-timer.module#ModeLightJwTimerPageModule', name: 'ModeLightJwTimerPage', segment: 'mode-light-jw-timer', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/timer/mode-light-timer/mode-light-timer.module#ModeLightTimerPageModule', name: 'ModeLightTimerPage', segment: 'mode-light-timer', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/timer/pump-northcourt-timer/pump-northcourt-timer.module#PumpNorthcourtTimerPageModule', name: 'PumpNorthcourtTimerPage', segment: 'pump-northcourt-timer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/mode-curtain-timer/mode-curtain-timer.module#ModeCurtainTimerPageModule', name: 'ModeCurtainTimerPage', segment: 'mode-curtain-timer', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/timer/mode-light-timer/mode-light-timer.module#ModeLightTimerPageModule', name: 'ModeLightTimerPage', segment: 'mode-light-timer', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/timer/mode-light-jw-timer/mode-light-jw-timer.module#ModeLightJwTimerPageModule', name: 'ModeLightJwTimerPage', segment: 'mode-light-jw-timer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/pump-eastnorthpool-timer/pump-eastnorthpool-timer.module#PumpEastnorthpoolTimerPageModule', name: 'PumpEastnorthpoolTimerPage', segment: 'pump-eastnorthpool-timer', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/timer/pump-northcourt-timer/pump-northcourt-timer.module#PumpNorthcourtTimerPageModule', name: 'PumpNorthcourtTimerPage', segment: 'pump-northcourt-timer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/timer-pump/timer-pump.module#TimerPumpPageModule', name: 'TimerPumpPage', segment: 'timer-pump', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/valve-eastcourt-timer/valve-eastcourt-timer.module#ValveEastcourtTimerPageModule', name: 'ValveEastcourtTimerPage', segment: 'valve-eastcourt-timer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/valve-eastnorthpool-timer/valve-eastnorthpool-timer.module#ValveEastnorthpoolTimerPageModule', name: 'ValveEastnorthpoolTimerPage', segment: 'valve-eastnorthpool-timer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/valve-eastpool-timer/valve-eastpool-timer.module#ValveEastpoolTimerPageModule', name: 'ValveEastpoolTimerPage', segment: 'valve-eastpool-timer', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/wellpump/wellpump.module#WellpumpPageModule', name: 'WellpumpPage', segment: 'wellpump', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/valve-northpool-timer/valve-northpool-timer.module#ValveNorthpoolTimerPageModule', name: 'ValveNorthpoolTimerPage', segment: 'valve-northpool-timer', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/wellpump/wellpump.module#WellpumpPageModule', name: 'WellpumpPage', segment: 'wellpump', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellpumpquery/wellpumpquery.module#WellpumpqueryPageModule', name: 'WellpumpqueryPage', segment: 'wellpumpquery', priority: 'low', defaultHistory: [] }
                     ]
                 }),
