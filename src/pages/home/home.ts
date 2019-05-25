@@ -6,7 +6,8 @@ import { DeviceRequestsProvider } from '../../providers/tools/requests'
 // import { ModeSettingPage } from '../mode-setting/mode-setting';
 import { ToolsProvider } from '../../providers/tools/tools';
 import { SpeechHelperProvider } from '../../providers/tools/speechHelper'
-
+import { JPush } from "@jiguang-ionic/jpush";
+import { Device } from "@ionic-native/device";
 
 
 
@@ -34,7 +35,9 @@ export class HomePage {
     private alertCtrl: AlertController,
     private tools: ToolsProvider,
     private speech: SpeechHelperProvider,
-    public el: ElementRef
+    public el: ElementRef,
+    public jpush: JPush,
+    private device: Device
   ) {
 
     this.deviceRequest.getWeatherInfo().then(res => {
@@ -169,6 +172,16 @@ export class HomePage {
 
     }
 
+  }
+  addLocalNotification() {
+    if (this.device.platform == "Android") {
+      this.jpush.addLocalNotification(0, "Hello JPush", "JPush", 1, 5000);
+    } else {
+      this.jpush.addLocalNotificationForIOS(1, "Hello JPush", 1, "localNoti1");
+      this.jpush.getRegistrationID().then(res=>{
+        alert(res);
+      })
+    }
   }
 
 }

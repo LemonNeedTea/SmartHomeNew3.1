@@ -107,6 +107,7 @@
           </div>
 
           <div *ngSwitchCase="'setting'" class="my-list">
+            <button ion-button (click)="addLocalNotification()">jpush</button>
             <!-- <ion-list class="my-list"> -->
             <ion-item (click)="goModePublicSetting()" no-padding>
               <div item-start class="start c5">

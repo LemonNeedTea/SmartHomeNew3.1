@@ -64,7 +64,7 @@ var StorageProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__(356);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_config__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_config__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tools_tools__ = __webpack_require__(27);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -294,7 +294,7 @@ var TabsPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return chartToolsProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__antv_f2__ = __webpack_require__(525);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__antv_f2__ = __webpack_require__(527);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__antv_f2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__antv_f2__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -495,7 +495,7 @@ var LoginPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_tools_requests__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_model_variable__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_model_variable__ = __webpack_require__(43);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -678,7 +678,7 @@ var DevicePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_tools_tools__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_tools_requests__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_tools_chart__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_model_variable__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_model_variable__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_model_enumdata__ = __webpack_require__(67);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -909,7 +909,7 @@ var EnergyPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_tools_requests__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_model_variable__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_model_variable__ = __webpack_require__(43);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1037,147 +1037,147 @@ webpackEmptyAsyncContext.id = 179;
 
 var map = {
 	"../pages/barchart/barchart.module": [
-		847,
+		849,
 		31
 	],
 	"../pages/device-setting/curtain-setting/curtain-setting.module": [
-		848,
+		850,
 		30
 	],
 	"../pages/device-setting/door-setting/door-setting.module": [
-		849,
+		851,
 		29
 	],
 	"../pages/device-setting/lift-setting/lift-setting.module": [
-		850,
+		852,
 		28
 	],
 	"../pages/device-setting/pump-eastnorthpool-setting/pump-eastnorthpool-setting.module": [
-		851,
+		853,
 		27
 	],
 	"../pages/device-setting/pump-northcourt-setting/pump-northcourt-setting.module": [
-		852,
+		854,
 		26
 	],
 	"../pages/device-setting/valve-eastcourt-setting/valve-eastcourt-setting.module": [
-		853,
+		855,
 		25
 	],
 	"../pages/device-setting/valve-eastnorthpool-setting/valve-eastnorthpool-setting.module": [
-		854,
+		856,
 		24
 	],
 	"../pages/device-setting/valve-eastpool-setting/valve-eastpool-setting.module": [
-		855,
+		857,
 		23
 	],
 	"../pages/device-setting/valve-northpool-setting/valve-northpool-setting.module": [
-		856,
+		859,
 		22
 	],
 	"../pages/device/device.module": [
-		857,
+		858,
 		35
 	],
 	"../pages/energy-query/energy-query.module": [
-		858,
+		860,
 		21
 	],
 	"../pages/energy/energy.module": [
-		859,
+		861,
 		34
 	],
 	"../pages/linechart/linechart.module": [
-		860,
+		862,
 		20
 	],
 	"../pages/login/login.module": [
-		861,
+		863,
 		33
 	],
 	"../pages/message-history/message-history.module": [
-		862,
+		864,
 		19
 	],
 	"../pages/mode-device-selected-setting/mode-device-selected-setting.module": [
-		863,
+		865,
 		18
 	],
 	"../pages/mode-public-setting/mode-public-setting.module": [
-		864,
+		866,
 		17
 	],
 	"../pages/mode-setting/mode-setting.module": [
-		865,
+		867,
 		16
 	],
 	"../pages/password/password.module": [
-		866,
+		868,
 		15
 	],
 	"../pages/popover/popover.module": [
-		867,
+		869,
 		14
 	],
 	"../pages/room/room.module": [
-		868,
+		870,
 		32
 	],
 	"../pages/roomdevice/roomdevice.module": [
-		869,
+		871,
 		13
 	],
 	"../pages/timer/mode-airseasonson-timer/mode-airseasonson-timer.module": [
-		870,
+		873,
 		9
 	],
 	"../pages/timer/mode-curtain-timer/mode-curtain-timer.module": [
-		871,
+		872,
 		8
 	],
 	"../pages/timer/mode-light-jw-timer/mode-light-jw-timer.module": [
-		872,
+		874,
 		7
 	],
 	"../pages/timer/mode-light-timer/mode-light-timer.module": [
-		873,
+		875,
 		6
 	],
 	"../pages/timer/pump-eastnorthpool-timer/pump-eastnorthpool-timer.module": [
-		874,
+		876,
 		12
 	],
 	"../pages/timer/pump-northcourt-timer/pump-northcourt-timer.module": [
-		875,
+		877,
 		5
 	],
 	"../pages/timer/timer-pump/timer-pump.module": [
-		876,
+		878,
 		4
 	],
 	"../pages/timer/valve-eastcourt-timer/valve-eastcourt-timer.module": [
-		877,
+		879,
 		3
 	],
 	"../pages/timer/valve-eastnorthpool-timer/valve-eastnorthpool-timer.module": [
-		878,
+		881,
 		2
 	],
 	"../pages/timer/valve-eastpool-timer/valve-eastpool-timer.module": [
-		879,
+		880,
 		1
 	],
 	"../pages/timer/valve-northpool-timer/valve-northpool-timer.module": [
-		880,
+		882,
 		0
 	],
 	"../pages/wellpump/wellpump.module": [
-		881,
+		883,
 		11
 	],
 	"../pages/wellpumpquery/wellpumpquery.module": [
-		882,
+		884,
 		10
 	]
 };
@@ -1205,7 +1205,7 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_storage_storage__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_model_enumdata__ = __webpack_require__(67);
@@ -1557,10 +1557,10 @@ var ToolsProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_storage_storage__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_http_services_http_services__ = __webpack_require__(124);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_config__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_config__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_enumdata__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__socketHelper__ = __webpack_require__(448);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_model_variable__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_model_variable__ = __webpack_require__(43);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1892,7 +1892,7 @@ var DeviceRequestsProvider = (function () {
 
 /***/ }),
 
-/***/ 42:
+/***/ 43:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1938,7 +1938,7 @@ var Variable = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SocketHelpProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_model_variable__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_model_variable__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tools_tools__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_ws__ = __webpack_require__(449);
@@ -2254,7 +2254,7 @@ var SocketHelpProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_config_config__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_config_config__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(11);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2430,10 +2430,12 @@ var MessagePage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_model_variable__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_model_variable__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_tools_requests__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_tools_tools__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_tools_speechHelper__ = __webpack_require__(452);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__jiguang_ionic_jpush__ = __webpack_require__(453);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_device__ = __webpack_require__(454);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2451,8 +2453,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 // import { ModeSettingPage } from '../mode-setting/mode-setting';
 
 
+
+
 var HomePage = (function () {
-    function HomePage(navCtrl, loadingCtrl, modalCtrl, events, deviceRequest, alertCtrl, tools, speech, el) {
+    function HomePage(navCtrl, loadingCtrl, modalCtrl, events, deviceRequest, alertCtrl, tools, speech, el, jpush, device) {
         var _this = this;
         this.navCtrl = navCtrl;
         this.loadingCtrl = loadingCtrl;
@@ -2463,6 +2467,8 @@ var HomePage = (function () {
         this.tools = tools;
         this.speech = speech;
         this.el = el;
+        this.jpush = jpush;
+        this.device = device;
         this.modeDataList = [];
         this.weatherinfo = {};
         this.homeType = 'mode';
@@ -2596,6 +2602,17 @@ var HomePage = (function () {
             ;
         }
     };
+    HomePage.prototype.addLocalNotification = function () {
+        if (this.device.platform == "Android") {
+            this.jpush.addLocalNotification(0, "Hello JPush", "JPush", 1, 5000);
+        }
+        else {
+            this.jpush.addLocalNotificationForIOS(1, "Hello JPush", 1, "localNoti1");
+            this.jpush.getRegistrationID().then(function (res) {
+                alert(res);
+            });
+        }
+    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Header */]),
         __metadata("design:type", Object)
@@ -2606,7 +2623,7 @@ var HomePage = (function () {
     ], HomePage.prototype, "homeHeaderContent", void 0);
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/zhoubo/Project/SmartHomeNew3.1/src/pages/home/home.html"*/'<ion-header no-border>\n  <ion-toolbar transparent>\n    <button ion-button icon-only menuToggle>\n      <ion-icon class="user"></ion-icon>\n\n    </button>\n    <ion-title>家居智慧能源管理</ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="scan()" tappable end style="color:white">\n        <ion-icon name="barcode-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n\n</ion-header>\n\n<ion-content (ionScroll)="scrollEvent($event)">\n\n  <div class="home-header">\n    <div #homeHeaderContent class="home-header-content">\n      <ion-row>\n        <ion-col col-6 text-left class="col-left">\n          <div class="city">{{weatherinfo.location}}</div>\n          <p no-margin>{{weatherinfo.temperature}}°C | {{weatherinfo.cond_txt}}</p>\n\n        </ion-col>\n        <!-- <ion-col col-6 text-right class=\'col-right\'> -->\n        <!-- <div class="header-right" float-right>111</div> -->\n        <!-- 功率:0.026kW\n              <p no-margin>日:0.6度</p>\n              <p no-margin>月:58.7度</p>\n              <p no-margin>年:145.4度</p> -->\n\n        <!-- </ion-col> -->\n      </ion-row>\n      <ion-row>\n        <ion-col class=\'col-right\'>\n          <img src="../../assets/home/power.png" />功率:{{power}}kW &nbsp; <img src="../../assets/home/energy.png " />\n          日/月/年:{{oneData.ud+" / "+oneData.um+" / "+oneData.uy+""}}\n\n        </ion-col>\n        <!-- <p></p> -->\n      </ion-row>\n\n\n\n    </div>\n    <!-- <div class="weather">\n      <p><span class="degree">{{weatherinfo.temperature}}°</span>{{weatherinfo.cond_txt}}</p>\n      <span class="city">{{weatherinfo.location}}</span>\n    </div>\n    <div class="weather-bottom ion-grid">\n      <ion-row>\n        <ion-col col-6>湿度：<span class="">{{weatherinfo.humidity}}%</span></ion-col>\n        <ion-col col-6>风速：<span class="">{{weatherinfo.wind_dir}}{{weatherinfo.wind_sc}}</span></ion-col>\n      </ion-row>\n    </div> -->\n  </div>\n  <ion-list no-padding no-margin>\n    <!-- <ion-item-group> -->\n    <ion-item-divider sticky no-padding style="background:white">\n      <ion-segment [(ngModel)]="homeType">\n        <ion-segment-button value="mode">\n          模式\n        </ion-segment-button>\n        <ion-segment-button value="setting">\n          设置\n        </ion-segment-button>\n      </ion-segment>\n    </ion-item-divider>\n\n    <ion-item-sliding no-padding no-margin>\n      <ion-item no-padding no-margin style="background-color:#f7f7f7">\n        <!-- {{homeType}} -->\n\n        <div [ngSwitch]="homeType">\n          <div *ngSwitchCase="\'mode\'">\n            <div class="home-main">\n\n              <ion-grid>\n\n                <ion-row>\n                  <ion-col col-6 *ngFor="let mode of modeDataList">\n                    <ion-card class="mode-card" [ngClass]="{\'mode-card-selected\': modeID==mode.F_AgreementID}">\n                      <ion-card-header no-padding>\n                        <div style="width: 25%;float: left;" *ngIf="modeID==mode.F_AgreementID">\n                          <div class="now">\n                            当前\n                          </div>\n                        </div>\n                        <button ion-button clear small float-right (click)="goModeSetting(mode)">\n                          <ion-icon name=\'settings\'></ion-icon>\n                        </button>\n                      </ion-card-header>\n                      <ion-card-content (click)="setMode(mode.F_AgreementID,mode.F_Name)">\n                        <img src="../assets/img/home/icon-mode/{{mode.F_Img}}">\n                        <h3 ion-text style="font-size: 1.6rem;">{{mode.F_Name}} </h3>\n                      </ion-card-content>\n                    </ion-card>\n                  </ion-col>\n\n                </ion-row>\n              </ion-grid>\n\n\n            </div>\n          </div>\n\n          <div *ngSwitchCase="\'setting\'" class="my-list">\n            <!-- <ion-list class="my-list"> -->\n            <ion-item (click)="goModePublicSetting()" no-padding>\n              <div item-start class="start c5">\n                <img src=\'../../assets/home/publicsetting.png\'>\n              </div>\n              模式公共设置\n              <ion-icon name="arrow-forward" item-end></ion-icon>\n            </ion-item>\n\n            <!-- </ion-list> -->\n          </div>\n\n\n\n        </div>\n\n      </ion-item>\n    </ion-item-sliding>\n\n    <!-- </ion-item-group> -->\n  </ion-list>\n\n  <!-- <ion-item>\n    <ion-label>Sam</ion-label>\n    <ion-toggle [(ngModel)]="deviceData[\'35\']"></ion-toggle>\n  </ion-item> -->\n</ion-content>'/*ion-inline-end:"/Users/zhoubo/Project/SmartHomeNew3.1/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/zhoubo/Project/SmartHomeNew3.1/src/pages/home/home.html"*/'<ion-header no-border>\n  <ion-toolbar transparent>\n    <button ion-button icon-only menuToggle>\n      <ion-icon class="user"></ion-icon>\n\n    </button>\n    <ion-title>家居智慧能源管理</ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="scan()" tappable end style="color:white">\n        <ion-icon name="barcode-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n\n</ion-header>\n\n<ion-content (ionScroll)="scrollEvent($event)">\n\n  <div class="home-header">\n    <div #homeHeaderContent class="home-header-content">\n      <ion-row>\n        <ion-col col-6 text-left class="col-left">\n          <div class="city">{{weatherinfo.location}}</div>\n          <p no-margin>{{weatherinfo.temperature}}°C | {{weatherinfo.cond_txt}}</p>\n\n        </ion-col>\n        <!-- <ion-col col-6 text-right class=\'col-right\'> -->\n        <!-- <div class="header-right" float-right>111</div> -->\n        <!-- 功率:0.026kW\n              <p no-margin>日:0.6度</p>\n              <p no-margin>月:58.7度</p>\n              <p no-margin>年:145.4度</p> -->\n\n        <!-- </ion-col> -->\n      </ion-row>\n      <ion-row>\n        <ion-col class=\'col-right\'>\n          <img src="../../assets/home/power.png" />功率:{{power}}kW &nbsp; <img src="../../assets/home/energy.png " />\n          日/月/年:{{oneData.ud+" / "+oneData.um+" / "+oneData.uy+""}}\n\n        </ion-col>\n        <!-- <p></p> -->\n      </ion-row>\n\n\n\n    </div>\n    <!-- <div class="weather">\n      <p><span class="degree">{{weatherinfo.temperature}}°</span>{{weatherinfo.cond_txt}}</p>\n      <span class="city">{{weatherinfo.location}}</span>\n    </div>\n    <div class="weather-bottom ion-grid">\n      <ion-row>\n        <ion-col col-6>湿度：<span class="">{{weatherinfo.humidity}}%</span></ion-col>\n        <ion-col col-6>风速：<span class="">{{weatherinfo.wind_dir}}{{weatherinfo.wind_sc}}</span></ion-col>\n      </ion-row>\n    </div> -->\n  </div>\n  <ion-list no-padding no-margin>\n    <!-- <ion-item-group> -->\n    <ion-item-divider sticky no-padding style="background:white">\n      <ion-segment [(ngModel)]="homeType">\n        <ion-segment-button value="mode">\n          模式\n        </ion-segment-button>\n        <ion-segment-button value="setting">\n          设置\n        </ion-segment-button>\n      </ion-segment>\n    </ion-item-divider>\n\n    <ion-item-sliding no-padding no-margin>\n      <ion-item no-padding no-margin style="background-color:#f7f7f7">\n        <!-- {{homeType}} -->\n\n        <div [ngSwitch]="homeType">\n          <div *ngSwitchCase="\'mode\'">\n            <div class="home-main">\n\n              <ion-grid>\n\n                <ion-row>\n                  <ion-col col-6 *ngFor="let mode of modeDataList">\n                    <ion-card class="mode-card" [ngClass]="{\'mode-card-selected\': modeID==mode.F_AgreementID}">\n                      <ion-card-header no-padding>\n                        <div style="width: 25%;float: left;" *ngIf="modeID==mode.F_AgreementID">\n                          <div class="now">\n                            当前\n                          </div>\n                        </div>\n                        <button ion-button clear small float-right (click)="goModeSetting(mode)">\n                          <ion-icon name=\'settings\'></ion-icon>\n                        </button>\n                      </ion-card-header>\n                      <ion-card-content (click)="setMode(mode.F_AgreementID,mode.F_Name)">\n                        <img src="../assets/img/home/icon-mode/{{mode.F_Img}}">\n                        <h3 ion-text style="font-size: 1.6rem;">{{mode.F_Name}} </h3>\n                      </ion-card-content>\n                    </ion-card>\n                  </ion-col>\n\n                </ion-row>\n              </ion-grid>\n\n\n            </div>\n          </div>\n\n          <div *ngSwitchCase="\'setting\'" class="my-list">\n            <button ion-button (click)="addLocalNotification()">jpush</button>\n            <!-- <ion-list class="my-list"> -->\n            <ion-item (click)="goModePublicSetting()" no-padding>\n              <div item-start class="start c5">\n                <img src=\'../../assets/home/publicsetting.png\'>\n              </div>\n              模式公共设置\n              <ion-icon name="arrow-forward" item-end></ion-icon>\n            </ion-item>\n\n            <!-- </ion-list> -->\n          </div>\n\n\n\n        </div>\n\n      </ion-item>\n    </ion-item-sliding>\n\n    <!-- </ion-item-group> -->\n  </ion-list>\n\n  <!-- <ion-item>\n    <ion-label>Sam</ion-label>\n    <ion-toggle [(ngModel)]="deviceData[\'35\']"></ion-toggle>\n  </ion-item> -->\n</ion-content>'/*ion-inline-end:"/Users/zhoubo/Project/SmartHomeNew3.1/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["u" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Events */],
@@ -2614,7 +2631,9 @@ var HomePage = (function () {
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
             __WEBPACK_IMPORTED_MODULE_4__providers_tools_tools__["a" /* ToolsProvider */],
             __WEBPACK_IMPORTED_MODULE_5__providers_tools_speechHelper__["a" /* SpeechHelperProvider */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */],
+            __WEBPACK_IMPORTED_MODULE_6__jiguang_ionic_jpush__["a" /* JPush */],
+            __WEBPACK_IMPORTED_MODULE_7__ionic_native_device__["a" /* Device */]])
     ], HomePage);
     return HomePage;
 }());
@@ -2632,7 +2651,7 @@ var HomePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tools_tools__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_tools_requests__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_variable__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_variable__ = __webpack_require__(43);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2799,7 +2818,7 @@ var SpeechHelperProvider = (function () {
 
 /***/ }),
 
-/***/ 48:
+/***/ 49:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2838,17 +2857,17 @@ var ConfigProvider = (function () {
 
 /***/ }),
 
-/***/ 499:
+/***/ 501:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__my_title_my_title__ = __webpack_require__(811);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__my_title_my_title__ = __webpack_require__(813);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__my_loop_my_loop__ = __webpack_require__(812);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__my_runtime_my_runtime__ = __webpack_require__(813);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__my_time_my_time__ = __webpack_require__(814);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__my_loop_my_loop__ = __webpack_require__(814);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__my_runtime_my_runtime__ = __webpack_require__(815);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__my_time_my_time__ = __webpack_require__(816);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2884,13 +2903,13 @@ var ComponentsModule = (function () {
 
 /***/ }),
 
-/***/ 500:
+/***/ 502:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(501);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(505);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(503);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(507);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -2898,7 +2917,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 505:
+/***/ 507:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2906,28 +2925,28 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(831);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(833);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(832);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(834);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ionic_img_viewer__ = __webpack_require__(836);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angular2_websocket_service__ = __webpack_require__(498);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ionic_img_viewer__ = __webpack_require__(838);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angular2_websocket_service__ = __webpack_require__(500);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angular2_websocket_service___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_angular2_websocket_service__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(493);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(494);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_qr_scanner__ = __webpack_require__(843);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_screen_orientation__ = __webpack_require__(844);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_network__ = __webpack_require__(495);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(495);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(496);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_qr_scanner__ = __webpack_require__(845);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_screen_orientation__ = __webpack_require__(846);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_network__ = __webpack_require__(497);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_vibration__ = __webpack_require__(351);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_ws__ = __webpack_require__(449);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_config_config__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_config_config__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_storage_storage__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_tools_tools__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_http_services_http_services__ = __webpack_require__(124);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_tools_requests__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_tools_chart__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_tools_socketHelper__ = __webpack_require__(448);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_server_socket_service__ = __webpack_require__(845);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_server_socket_service__ = __webpack_require__(847);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_tools_speechHelper__ = __webpack_require__(452);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_login_login__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_message_message__ = __webpack_require__(450);
@@ -2936,7 +2955,9 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_room_room__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_device_device__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_energy_energy__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_components_module__ = __webpack_require__(499);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_components_module__ = __webpack_require__(501);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__jiguang_ionic_jpush__ = __webpack_require__(453);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__ionic_native_device__ = __webpack_require__(454);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2980,6 +3001,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 //组件
 
+// @jiguang-ionic/jpush@1.0.0+
+
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -3010,8 +3034,8 @@ var AppModule = (function () {
                         { loadChildren: '../pages/device-setting/valve-eastcourt-setting/valve-eastcourt-setting.module#ValveEastcourtSettingPageModule', name: 'ValveEastcourtSettingPage', segment: 'valve-eastcourt-setting', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/device-setting/valve-eastnorthpool-setting/valve-eastnorthpool-setting.module#ValveEastnorthpoolSettingPageModule', name: 'ValveEastnorthpoolSettingPage', segment: 'valve-eastnorthpool-setting', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/device-setting/valve-eastpool-setting/valve-eastpool-setting.module#ValveEastpoolSettingPageModule', name: 'ValveEastpoolSettingPage', segment: 'valve-eastpool-setting', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/device-setting/valve-northpool-setting/valve-northpool-setting.module#ValveNorthpoolSettingPageModule', name: 'ValveNorthpoolSettingPage', segment: 'valve-northpool-setting', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/device/device.module#DevicePageModule', name: 'DevicePage', segment: 'device', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/device-setting/valve-northpool-setting/valve-northpool-setting.module#ValveNorthpoolSettingPageModule', name: 'ValveNorthpoolSettingPage', segment: 'valve-northpool-setting', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/energy-query/energy-query.module#EnergyQueryPageModule', name: 'EnergyQueryPage', segment: 'energy-query', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/energy/energy.module#EnergyPageModule', name: 'EnergyPage', segment: 'energy', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/linechart/linechart.module#LinechartPageModule', name: 'LinechartPage', segment: 'linechart', priority: 'low', defaultHistory: [] },
@@ -3024,16 +3048,16 @@ var AppModule = (function () {
                         { loadChildren: '../pages/popover/popover.module#PopoverPageModule', name: 'PopoverPage', segment: 'popover', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room/room.module#RoomPageModule', name: 'RoomPage', segment: 'room', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/roomdevice/roomdevice.module#RoomdevicePageModule', name: 'RoomdevicePage', segment: 'roomdevice', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/timer/mode-airseasonson-timer/mode-airseasonson-timer.module#ModeAirseasonsonTimerPageModule', name: 'ModeAirseasonsonTimerPage', segment: 'mode-airseasonson-timer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/mode-curtain-timer/mode-curtain-timer.module#ModeCurtainTimerPageModule', name: 'ModeCurtainTimerPage', segment: 'mode-curtain-timer', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/timer/mode-airseasonson-timer/mode-airseasonson-timer.module#ModeAirseasonsonTimerPageModule', name: 'ModeAirseasonsonTimerPage', segment: 'mode-airseasonson-timer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/mode-light-jw-timer/mode-light-jw-timer.module#ModeLightJwTimerPageModule', name: 'ModeLightJwTimerPage', segment: 'mode-light-jw-timer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/mode-light-timer/mode-light-timer.module#ModeLightTimerPageModule', name: 'ModeLightTimerPage', segment: 'mode-light-timer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/pump-eastnorthpool-timer/pump-eastnorthpool-timer.module#PumpEastnorthpoolTimerPageModule', name: 'PumpEastnorthpoolTimerPage', segment: 'pump-eastnorthpool-timer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/pump-northcourt-timer/pump-northcourt-timer.module#PumpNorthcourtTimerPageModule', name: 'PumpNorthcourtTimerPage', segment: 'pump-northcourt-timer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/timer-pump/timer-pump.module#TimerPumpPageModule', name: 'TimerPumpPage', segment: 'timer-pump', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/valve-eastcourt-timer/valve-eastcourt-timer.module#ValveEastcourtTimerPageModule', name: 'ValveEastcourtTimerPage', segment: 'valve-eastcourt-timer', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/timer/valve-eastnorthpool-timer/valve-eastnorthpool-timer.module#ValveEastnorthpoolTimerPageModule', name: 'ValveEastnorthpoolTimerPage', segment: 'valve-eastnorthpool-timer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/valve-eastpool-timer/valve-eastpool-timer.module#ValveEastpoolTimerPageModule', name: 'ValveEastpoolTimerPage', segment: 'valve-eastpool-timer', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/timer/valve-eastnorthpool-timer/valve-eastnorthpool-timer.module#ValveEastnorthpoolTimerPageModule', name: 'ValveEastnorthpoolTimerPage', segment: 'valve-eastnorthpool-timer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/timer/valve-northpool-timer/valve-northpool-timer.module#ValveNorthpoolTimerPageModule', name: 'ValveNorthpoolTimerPage', segment: 'valve-northpool-timer', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellpump/wellpump.module#WellpumpPageModule', name: 'WellpumpPage', segment: 'wellpump', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellpumpquery/wellpumpquery.module#WellpumpqueryPageModule', name: 'WellpumpqueryPage', segment: 'wellpumpquery', priority: 'low', defaultHistory: [] }
@@ -3076,7 +3100,9 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_8_angular2_websocket_service__["WebSocketService"],
                 __WEBPACK_IMPORTED_MODULE_23__providers_server_socket_service__["a" /* ServerSocket */],
                 __WEBPACK_IMPORTED_MODULE_24__providers_tools_speechHelper__["a" /* SpeechHelperProvider */],
-                __WEBPACK_IMPORTED_MODULE_14__ionic_native_vibration__["a" /* Vibration */]
+                __WEBPACK_IMPORTED_MODULE_14__ionic_native_vibration__["a" /* Vibration */],
+                __WEBPACK_IMPORTED_MODULE_33__jiguang_ionic_jpush__["a" /* JPush */],
+                __WEBPACK_IMPORTED_MODULE_34__ionic_native_device__["a" /* Device */]
             ]
         })
     ], AppModule);
@@ -3087,7 +3113,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 527:
+/***/ 529:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -3360,7 +3386,7 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 527;
+webpackContext.id = 529;
 
 /***/ }),
 
@@ -3399,7 +3425,7 @@ var EnumChartType;
 
 /***/ }),
 
-/***/ 811:
+/***/ 813:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3441,7 +3467,7 @@ var MyTitleComponent = (function () {
 
 /***/ }),
 
-/***/ 812:
+/***/ 814:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3593,7 +3619,7 @@ var MyLoopComponent = (function () {
 
 /***/ }),
 
-/***/ 813:
+/***/ 815:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3672,7 +3698,7 @@ var MyRuntimeComponent = (function () {
 
 /***/ }),
 
-/***/ 814:
+/***/ 816:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3751,20 +3777,20 @@ var MyTimeComponent = (function () {
 
 /***/ }),
 
-/***/ 831:
+/***/ 833:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(493);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(494);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(495);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(496);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_tools_tools__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_tools_requests__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_network__ = __webpack_require__(495);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_network__ = __webpack_require__(497);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3909,17 +3935,17 @@ var MyApp = (function () {
 
 /***/ }),
 
-/***/ 845:
+/***/ 847:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServerSocket; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_queueing_subject__ = __webpack_require__(846);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_queueing_subject__ = __webpack_require__(848);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_queueing_subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_queueing_subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_websocket_service__ = __webpack_require__(498);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_websocket_service__ = __webpack_require__(500);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_websocket_service___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_angular2_websocket_service__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_config_config__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_config_config__ = __webpack_require__(49);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3968,5 +3994,5 @@ var ServerSocket = (function () {
 
 /***/ })
 
-},[500]);
+},[502]);
 //# sourceMappingURL=main.js.map

@@ -43,7 +43,9 @@ import { EnergyPage } from '../pages/energy/energy';
 
 //组件
 import { ComponentsModule } from '../components/components.module'
-
+// @jiguang-ionic/jpush@1.0.0+
+import { JPush } from '@jiguang-ionic/jpush';
+import { Device } from "@ionic-native/device";
 
 
 
@@ -100,7 +102,9 @@ import { ComponentsModule } from '../components/components.module'
     WebSocketService,
     ServerSocket,
     SpeechHelperProvider,
-    Vibration
+    Vibration,
+    JPush,
+    Device
   ]
 })
 export class AppModule { }
