@@ -7,7 +7,7 @@ import { ConfigProvider } from '../config/config';
 import Moment, { now } from 'moment';
 import { EnumEnergyType, EnumDateType, EnumChartType } from '../../providers/model/enumdata';
 import { Vibration } from '@ionic-native/vibration';
-
+import { JPush } from '@jiguang-ionic/jpush';
 
 @Injectable()
 export class ToolsProvider {
@@ -18,7 +18,8 @@ export class ToolsProvider {
     private config: ConfigProvider,
     private toastCtrl: ToastController,
     private alertCtrl: AlertController,
-    private vibration: Vibration
+    private vibration: Vibration,
+    private jpush:JPush,
   ) {
   }
   //获取用户信息
@@ -303,6 +304,21 @@ export class ToolsProvider {
     } else {
       return data;
     }
+  }
+  getRegistrationID(){
+    return new Promise((resolve)=>{
+      var registrationid = this.storage.get("smarthomenew-registrationid");
+      if(registrationid){
+        resolve(registrationid);
+      }else{
+        this.jpush.getRegistrationID().then(res=>{
+          this.storage.set("smarthomenew-registrationid",res);
+          resolve(res);
+        },err=>{
+          resolve("");
+        });
+      }
+    });
   }
 
 

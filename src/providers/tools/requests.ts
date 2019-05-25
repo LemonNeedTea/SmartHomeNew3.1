@@ -38,38 +38,45 @@ export class LoginRequestsProvider {
   login(username: string, password: string) {
 
     return new Promise((resolve, reject) => {
-      let params = {
-        'txtUser': username,
-        'txtPwd': password
-      };
-      this.http.post("/EnergyAppLogin/LoginCheck", params).then(res => {
-        if (res["State"] == true) {
-          let userInfo = res["UserInfo"];
-          userInfo['txtUser'] = username;
-          userInfo['txtPwd'] = password;
-          this.tools.setUserInfo(userInfo);
-          this.events.publish('user:created', userInfo['username'], Date.now());
-          this.socket.startSocket();//启动websocket
-          Variable.socketObject = this.socket;
-          this.getTipAlarmList();
-          //获取震动状态
 
-          let vibrateState = this.tools.getVibrate();
-          this.events.publish("vibrate", vibrateState);
-          resolve(true);
+      this.tools.getRegistrationID().then(res => {
+        let params = {
+          'txtUser': username,
+          'txtPwd': password,
+          'AppKey': '6363cbe1d9878f0821c50e26',
+          'RegistrationId': res,
+        };
 
-        } else {
-          let toast = this.toastCtrl.create({
-            message: res["Msg"],
-            duration: 3000,
-            position: 'top'
-          });
-          toast.present();
-          reject(false);
-        }
-      }, err => {
-        reject(err);
-      });
+        this.http.post("/EnergyAppLogin/LoginCheck", params).then(res => {
+          if (res["State"] == true) {
+            let userInfo = res["UserInfo"];
+            userInfo['txtUser'] = username;
+            userInfo['txtPwd'] = password;
+            this.tools.setUserInfo(userInfo);
+            this.events.publish('user:created', userInfo['username'], Date.now());
+            this.socket.startSocket();//启动websocket
+            Variable.socketObject = this.socket;
+            //this.getTipAlarmList();
+            //获取震动状态
+
+            let vibrateState = this.tools.getVibrate();
+            this.events.publish("vibrate", vibrateState);
+            resolve(true);
+
+          } else {
+            let toast = this.toastCtrl.create({
+              message: res["Msg"],
+              duration: 3000,
+              position: 'top'
+            });
+            toast.present();
+            reject(false);
+          }
+        }, err => {
+          reject(err);
+        });
+      })
+
     });
 
   }
@@ -92,22 +99,27 @@ export class LoginRequestsProvider {
 
   }
   removeUserInfo() {
+    this.tools.getRegistrationID().then(res => {
+      let params = {
+        'RegistrationId': res,
+      };
+      this.http.post("/EnergyAppLogin/RemoveLogin", params).then(res => { });
+    });
+
     this.storage.remove(this.config.userInfoSotrageName);//
     //移除FnData
     Variable.ClearAll();
     this.socket.closeSocket();
-    // this.socketObj.ws.close();
-    // this.nav.setRoot(LoginPage);
   }
-  private getTipAlarmList() {
-    this.http.postMain("/EnergyAppData/GetAlarmDataList", {}, false).then((res: any) => {
-      res.forEach(element => {
-        if (element.F_LastState == 1 && element.F_IsTip == true) {
-          this.tools.presentAlarmAlert(element.F_AlarmText);
-        }
-      });
-    });
-  }
+  // private getTipAlarmList() {
+  //   this.http.postMain("/EnergyAppData/GetAlarmDataList", {}, false).then((res: any) => {
+  //     res.forEach(element => {
+  //       if (element.F_LastState == 1 && element.F_IsTip == true) {
+  //         this.tools.presentAlarmAlert(element.F_AlarmText);
+  //       }
+  //     });
+  //   });
+  // }
 }
 
 @Injectable()
